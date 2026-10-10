@@ -8,6 +8,7 @@ Project home for Zisel Jewelry: website, brand assets, and market research.
 - **Live site:** https://sip-coder.github.io/zisel-jewelry/ (`index.html`)
 - **brand/**: preliminary logo concepts (A, B, C), stickers, text-message flyer, business card invite
 - **research/**: jewelry and pricing research, business and marketing research, competitor table
+  - Full competitive playbook (PDF/DOCX), the detailed version behind the market snapshot
 - **site-previews/**: desktop and mobile screenshots of the site
 - **deck/**: editable PowerPoint of the market snapshot
 
