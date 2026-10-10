@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zisel Jewelry — Holiday Pop-Up · Las Vegas</title>
+<meta name="description" content="Zisel Jewelry Holiday Pop-Up. Wholesale diamond and gold earrings, bracelets, necklaces, and custom jewelry. Private showings and showing parties in Las Vegas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0F2142;--navy2:#172E57;--navy3:#0A1830;--gold:#C6A15B;--goldl:#E7D3A1;--goldd:#B08D48;--ivory:#F7F4EC;--line:#E6E1D6;--ink:#0F2142;--muted:#5B6680;
+  --serif:'Bodoni Moda',Didot,'Times New Roman',serif;--text:'Cormorant Garamond',Garamond,Georgia,serif;--caps:'Montserrat','Helvetica Neue',Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--text);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+/* pin Bodoni optical size so large headings keep the flyer/logo contrast (auto opsz turns hairlines invisible) */
+.wm .name,.h2,.hero .title,.card h3,.opt h3,.step .n{font-variation-settings:"opsz" 11;font-optical-sizing:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+
+/* ---------- wordmark (Logo A) ---------- */
+.wm{display:inline-flex;flex-direction:column;align-items:center;line-height:1}
+.wm .name{font-family:var(--serif);font-weight:500;letter-spacing:.01em;line-height:1;white-space:nowrap}
+.wm .i{position:relative;display:inline-block}
+.wm .i svg{position:absolute;left:50%;transform:translateX(-50%);width:.30em;top:.04em}
+.wm .sub{font-family:var(--caps);font-weight:500;text-transform:uppercase;letter-spacing:.7em;margin-right:-.7em;color:var(--gold)}
+
+/* ---------- shared ---------- */
+.eyebrow{font-family:var(--caps);font-weight:600;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.2vw,52px);line-height:1.1;letter-spacing:-.005em}
+.h2 em{font-style:italic;color:var(--goldd)}
+.lead{font-size:clamp(20px,1.8vw,23px);line-height:1.5;color:var(--muted)}
+.rule{display:flex;align-items:center;gap:14px;color:var(--gold)}
+.rule i{display:block;width:64px;height:1px;background:var(--gold)}
+.rule svg{width:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--caps);font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;padding:17px 30px;border:1.5px solid var(--gold);transition:.2s;white-space:nowrap;cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--goldl);border-color:var(--goldl)}
+.btn-line{color:#fff;background:transparent}
+.btn-line:hover{background:rgba(198,161,91,.14)}
+.btn-navy{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy2)}
+.ph{display:inline-block;font-family:var(--caps);font-weight:500;font-size:.82em;letter-spacing:.08em;border:1.5px dashed var(--gold);border-radius:6px;padding:1px 9px;color:var(--goldd);white-space:nowrap}
+.on-navy .ph{color:var(--goldl);border-color:rgba(231,211,161,.7)}
+section{position:relative}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.nav .wm .name{font-size:34px;color:var(--navy)}
+.nav .wm .sub{font-size:8px;letter-spacing:.62em;margin-right:-.62em;margin-top:4px}
+.links{display:flex;gap:34px;font-family:var(--caps);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.links a{position:relative;padding:6px 0}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:.25s}
+.links a:hover:after{right:0}
+.nav .btn{padding:13px 22px;font-size:11.5px}
+
+/* ---------- hero ---------- */
+.hero{background:radial-gradient(110% 90% at 50% 0%,#1B3666 0%,var(--navy) 55%,var(--navy3) 100%);color:#fff;text-align:center;overflow:hidden}
+.hero .frame{position:absolute;inset:28px;border:1.5px solid rgba(198,161,91,.6);pointer-events:none}
+.hero .frame2{position:absolute;inset:37px;border:1px solid rgba(198,161,91,.25);pointer-events:none}
+.hero .inner{position:relative;padding:118px 40px 124px;display:flex;flex-direction:column;align-items:center}
+.hero .wm .name{font-size:clamp(96px,11vw,150px);color:#fff}
+.hero .wm .sub{font-size:clamp(14px,1.5vw,20px);color:var(--goldl);margin-top:14px}
+.hy{font-family:var(--text);font-style:normal;font-weight:500;margin:0 .04em}
+.hero .title{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(46px,5.6vw,76px);color:var(--goldl);line-height:1;margin-top:46px}
+.hero .hol{font-family:var(--caps);font-weight:500;font-size:clamp(12px,1.25vw,15px);letter-spacing:.28em;text-transform:uppercase;margin-top:24px;opacity:.92;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center}
+.hero .hol b{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);display:inline-block}
+.hero .rule{margin-top:38px}
+.hero p.lead{color:rgba(255,255,255,.86);max-width:640px;margin-top:30px}
+.hero .ctas{display:flex;gap:16px;margin-top:42px;flex-wrap:wrap;justify-content:center}
+
+/* ---------- value strip ---------- */
+.strip{background:var(--ivory);border-bottom:1px solid var(--line)}
+.strip .row{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip .cell{padding:34px 22px;text-align:center;border-left:1px solid var(--line)}
+.strip .cell:first-child{border-left:0}
+.strip .k{font-family:var(--caps);font-weight:600;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--navy)}
+.strip .v{font-size:19px;color:var(--muted);margin-top:6px;font-style:italic}
+.strip .cell.hl .k{color:var(--goldd)}
+
+/* ---------- collection ---------- */
+.collection{padding:120px 0 110px}
+.sechead{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;max-width:720px;margin:0 auto 64px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{display:flex;flex-direction:column;background:#fff}
+.slot{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,#FBF9F4 0%,var(--ivory) 100%);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.slot:before{content:"";position:absolute;inset:12px;border:1px solid rgba(198,161,91,.35)}
+.slot svg.art{width:52%;height:auto}
+.slot .tag{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font-family:var(--caps);font-weight:500;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#9a8a66;border:1px dashed #cdb98c;padding:5px 10px;white-space:nowrap;background:rgba(255,255,255,.7)}
+.card h3{font-family:var(--serif);font-weight:400;font-size:28px;margin-top:22px}
+.card p{font-size:19px;color:var(--muted);margin-top:4px}
+.card .more{font-family:var(--caps);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--goldd);margin-top:14px}
+
+/* ---------- private showings ---------- */
+.private{background:var(--navy);color:#fff;padding:120px 0}
+.private .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:80px;align-items:center}
+.private .h2{color:#fff}
+.private .h2 em{color:var(--goldl)}
+.private p.lead{color:rgba(255,255,255,.8);margin-top:24px}
+.private .ctas{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.opts{display:grid;gap:20px}
+.opt{border:1px solid rgba(198,161,91,.45);background:rgba(255,255,255,.04);padding:34px 36px;display:grid;grid-template-columns:56px 1fr;gap:24px;align-items:start}
+.opt svg{width:56px;height:56px}
+.opt h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.15}
+.opt p{font-size:19px;color:rgba(255,255,255,.76);margin-top:8px}
+.opt .k{font-family:var(--caps);font-weight:600;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+
+/* ---------- custom ---------- */
+.custom{padding:120px 0}
+.custom .grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.custom .slot{aspect-ratio:1/1}
+.custom .slot svg.art{width:46%}
+.steps{margin-top:36px;display:grid;gap:0;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.step .n{font-family:var(--serif);font-style:italic;font-size:28px;color:var(--gold)}
+.step h4{font-family:var(--caps);font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase}
+.step p{font-size:19px;color:var(--muted);margin-top:4px}
+.custom .btn{margin-top:36px}
+
+/* ---------- pop-up details ---------- */
+.details{background:var(--ivory);padding:110px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dgrid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff}
+.d{padding:34px 22px 36px;text-align:center;border-left:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:14px}
+.d:first-child{border-left:0}
+.d svg{width:30px;height:30px}
+.d .k{font-family:var(--caps);font-weight:600;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--navy)}
+.d .v{font-size:20px}
+.details .note{text-align:center;margin-top:28px;font-size:19px;color:var(--muted);font-style:italic}
+
+/* ---------- inquiry ---------- */
+.inquire{padding:120px 0}
+.inquire .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+form{border:1px solid var(--line);padding:44px;background:#fff;box-shadow:0 30px 60px -40px rgba(15,33,66,.35);position:relative}
+form:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gold)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.full{grid-column:1/-1}
+label{display:block;font-family:var(--caps);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);margin-bottom:9px}
+input,select,textarea{width:100%;font-family:var(--text);font-size:20px;color:var(--ink);padding:13px 14px;border:1px solid #D7D1C3;background:#FDFCF9;border-radius:0;outline:none;transition:.2s;-webkit-appearance:none;appearance:none}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23C6A15B' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,161,91,.18)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%;margin-top:28px}
+.formnote{font-family:var(--caps);font-size:11px;letter-spacing:.06em;color:#8a8f9c;margin-top:14px;text-align:center}
+.thanks{display:none;margin-top:16px;text-align:center;font-size:19px;color:var(--goldd);font-style:italic}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy3);color:rgba(255,255,255,.78);padding:80px 0 40px}
+.fwrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+footer .wm .name{font-size:64px;color:#fff}
+footer .wm .sub{font-size:11px;color:var(--goldl);margin-top:8px}
+footer .tl{font-family:var(--caps);font-weight:500;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--goldl)}
+footer .contacts{display:flex;gap:14px 28px;flex-wrap:wrap;justify-content:center;font-size:19px}
+footer .fl{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;font-family:var(--caps);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+footer .fl a:hover{color:var(--goldl)}
+footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26px;margin-top:20px;font-family:var(--caps);font-size:11px;letter-spacing:.12em;color:rgba(255,255,255,.5)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .links{display:none}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .dgrid{grid-template-columns:repeat(3,1fr)}
+  .d:nth-child(4){border-left:0}
+  .d:nth-child(n+4){border-top:1px solid var(--line)}
+  .private .grid,.custom .grid,.inquire .grid{grid-template-columns:1fr;gap:56px}
+  .strip .row{grid-template-columns:repeat(2,1fr)}
+  .strip .cell:nth-child(3){border-left:0}
+  .strip .cell:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:640px){
+  .wrap{padding:0 22px}
+  html{scroll-padding-top:68px}
+  .nav{height:66px}
+  .nav .wm .name{font-size:28px}
+  .nav .wm .sub{font-size:7px}
+  .nav .btn{padding:11px 14px;font-size:10px;letter-spacing:.16em}
+  .nav .btn .long{display:none}
+  .hero .frame{inset:14px}.hero .frame2{inset:21px}
+  .hero .inner{padding:84px 30px 88px}
+  .hero .wm .name{font-size:92px}
+  .hy{font-family:var(--text);font-style:normal;font-weight:500;margin:0 .04em}
+.hero .title{font-size:44px;margin-top:38px}
+  .hero .hol{flex-direction:column;gap:10px;font-size:12px}
+  .hero .hol b{display:none}
+  .hero p.lead{font-size:20px}
+  .hero .ctas{flex-direction:column;width:100%;max-width:320px}
+  .hero .ctas .btn{width:100%}
+  .strip .cell{padding:24px 12px}
+  .strip .k{font-size:10.5px;letter-spacing:.18em}
+  .strip .v{font-size:17px}
+  .collection,.private,.custom,.inquire{padding:84px 0}
+  .details{padding:80px 0}
+  .sechead{margin-bottom:44px}
+  .cards{gap:28px 16px}
+  .card h3{font-size:23px;margin-top:16px}
+  .card p{font-size:17px}
+  .slot .tag{font-size:8px;letter-spacing:.14em;bottom:16px;padding:4px 7px}
+  .opt{grid-template-columns:1fr;gap:16px;padding:28px 26px}
+  .opt svg{width:44px;height:44px}
+  .private .ctas .btn{width:100%}
+  .dgrid{grid-template-columns:1fr}
+  .d{border-left:0 !important;border-top:1px solid var(--line);flex-direction:row;justify-content:space-between;text-align:left;padding:20px 22px;gap:12px}
+  .d:first-child{border-top:0}
+  .d svg{display:none}
+  form{padding:30px 22px}
+  .fgrid{grid-template-columns:1fr;gap:18px}
+  .custom .btn{width:100%}
+  footer .wm .name{font-size:54px}
+  .strip .k{letter-spacing:.12em;white-space:nowrap}
+  .h2 em.nb{display:block}
+  .opt h3{font-size:26px}
+  footer .tl{display:flex;flex-direction:column;gap:6px}
+  footer .tl .sep{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Reusable gem (Logo A diamond tittle) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="gem" viewBox="0 0 100 82">
+      <g stroke-linejoin="round">
+        <polygon points="20,1 80,1 99,26 50,81 1,26" fill="#C6A15B"/>
+        <polygon points="20,1 35,26 1,26" fill="#DDBF7E"/><polygon points="80,1 65,26 99,26" fill="#DDBF7E"/>
+        <polygon points="35,26 50,1 65,26" fill="#B08D48"/><polygon points="35,26 50,81 1,26" fill="#B08D48" opacity=".55"/>
+        <g fill="none" stroke="var(--gemline,#fff)" stroke-width="2.2">
+          <polygon points="20,1 80,1 99,26 50,81 1,26"/><polyline points="1,26 99,26"/>
+          <polyline points="20,1 35,26 50,1 65,26 80,1"/><polyline points="35,26 50,81 65,26"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="wm" aria-label="Zisel Jewelry home">
+      <span class="name">Z<span class="i">ı<svg viewBox="0 0 100 82"><use href="#gem"/></svg></span>sel</span>
+      <span class="sub">Jewelry</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#collection">Collection</a>
+      <a href="#private">Private Showings</a>
+      <a href="#custom">Custom</a>
+      <a href="#popup">Pop-Up</a>
+    </nav>
+    <a href="#inquire" class="btn btn-navy"><span>Book<span class="long"> a showing</span></span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero on-navy" style="--gemline:#0F2142">
+  <div class="frame"></div><div class="frame2"></div>
+  <div class="inner">
+    <div class="wm">
+      <span class="name">Z<span class="i">ı<svg viewBox="0 0 100 82"><use href="#gem"/></svg></span>sel</span>
+      <span class="sub">Jewelry</span>
+    </div>
+    <h1 class="title">Holiday Pop<span class="hy">-</span>Up</h1>
+    <div class="hol"><span>Hanukkah</span><b></b><span>Christmas</span><b></b><span>Valentine’s Day</span></div>
+    <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+    <p class="lead">Wholesale diamond &amp; gold jewelry — earrings, bracelets, necklaces, and custom pieces — at wholesale pricing. Private showings available in Las Vegas.</p>
+    <div class="ctas">
+      <a href="#inquire" class="btn btn-gold">Book a private showing</a>
+      <!-- Replace href with sms:+1XXXXXXXXXX once the RSVP number is confirmed -->
+      <a href="#popup" class="btn btn-line">Text to RSVP</a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE STRIP -->
+<section class="strip" aria-label="Highlights">
+  <div class="wrap row">
+    <div class="cell hl"><div class="k">Wholesale pricing</div><div class="v">on every piece</div></div>
+    <div class="cell"><div class="k">Diamond &amp; gold</div><div class="v">massive wholesale inventory</div></div>
+    <div class="cell"><div class="k">Custom jewelry</div><div class="v">made for you</div></div>
+    <div class="cell"><div class="k">Private showings</div><div class="v">in Las Vegas</div></div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection" id="collection">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="eyebrow">The Collection</div>
+      <h2 class="h2">Diamond &amp; gold, <em>at wholesale</em></h2>
+      <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+      <p class="lead">A holiday selection for gifting this season — Hanukkah, Christmas, and Valentine’s Day.</p>
+    </div>
+    <div class="cards">
+      <!-- Each .slot is a placeholder for his own product photography -->
+      <a class="card" href="#inquire">
+        <div class="slot">
+          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M42 12a8 8 0 1 1 0 16"/><line x1="42" y1="28" x2="42" y2="52"/><circle cx="42" cy="58" r="6"/>
+            <path d="M42 64l-14 18 14 38 14-38z" fill="rgba(198,161,91,.12)"/><path d="M28 82h28M35 82l7 38 7-38"/>
+            <path d="M82 12a8 8 0 1 1 0 16"/><line x1="82" y1="28" x2="82" y2="52"/><circle cx="82" cy="58" r="6"/>
+            <path d="M82 64l-14 18 14 38 14-38z" fill="rgba(198,161,91,.12)"/><path d="M68 82h28M75 82l7 38 7-38"/>
+          </svg>
+          <span class="tag">Photo placeholder</span>
+        </div>
+        <h3>Earrings</h3><p>Diamond &amp; gold</p><span class="more">Inquire →</span>
+      </a>
+      <a class="card" href="#inquire">
+        <div class="slot">
+          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round">
+            <ellipse cx="60" cy="78" rx="46" ry="24"/><ellipse cx="60" cy="72" rx="46" ry="24" stroke-opacity=".5"/>
+            <g fill="rgba(198,161,91,.25)"><circle cx="14" cy="76" r="4"/><circle cx="26" cy="92" r="4"/><circle cx="43" cy="100" r="4"/><circle cx="60" cy="102" r="4.5"/><circle cx="77" cy="100" r="4"/><circle cx="94" cy="92" r="4"/><circle cx="106" cy="76" r="4"/></g>
+          </svg>
+          <span class="tag">Photo placeholder</span>
+        </div>
+        <h3>Bracelets</h3><p>Diamond &amp; gold</p><span class="more">Inquire →</span>
+      </a>
+      <a class="card" href="#inquire">
+        <div class="slot">
+          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14c4 46 22 72 46 80M106 14c-4 46-22 72-46 80"/>
+            <path d="M60 94l-12 14 12 28 12-28z" fill="rgba(198,161,91,.12)"/><path d="M48 108h24M54 108l6 28 6-28"/>
+          </svg>
+          <span class="tag">Photo placeholder</span>
+        </div>
+        <h3>Necklaces</h3><p>Diamond &amp; gold</p><span class="more">Inquire →</span>
+      </a>
+      <a class="card" href="#custom">
+        <div class="slot">
+          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="60" cy="96" r="34"/><circle cx="60" cy="96" r="27" stroke-opacity=".5"/>
+            <path d="M44 46h32l10 14-26 22-26-22z" fill="rgba(198,161,91,.12)"/><path d="M34 60h52M50 46l-4 14 14 22 14-22-4-14"/>
+            <path d="M18 26l6 6M102 26l-6 6M60 14v8" stroke-opacity=".6"/>
+          </svg>
+          <span class="tag">Photo placeholder</span>
+        </div>
+        <h3>Custom</h3><p>Designed to your idea</p><span class="more">Start a piece →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE SHOWINGS -->
+<section class="private on-navy" id="private" style="--gemline:#0F2142">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow">In Vegas?</div>
+      <h2 class="h2" style="margin-top:18px">Private showings &amp; <em>private showing parties</em></h2>
+      <p class="lead">See the pieces in person, on your schedule. Book a one-on-one showing, or gather friends and family for a private showing party — with access to a massive wholesale inventory of diamond and gold jewelry.</p>
+      <div class="ctas">
+        <a href="#inquire" class="btn btn-gold">Book a private showing</a>
+        <a href="#popup" class="btn btn-line">Text to RSVP</a>
+      </div>
+    </div>
+    <div class="opts">
+      <div class="opt">
+        <svg viewBox="0 0 56 56" fill="none" stroke="#C6A15B" stroke-width="1.6"><circle cx="28" cy="28" r="27" stroke-opacity=".5"/><circle cx="28" cy="22" r="7"/><path d="M15 42c2-8 7-11 13-11s11 3 13 11"/></svg>
+        <div><div class="k">One-on-one</div><h3>Private showing</h3><p>A personal appointment to browse earrings, bracelets, necklaces, and talk through custom ideas.</p></div>
+      </div>
+      <div class="opt">
+        <svg viewBox="0 0 56 56" fill="none" stroke="#C6A15B" stroke-width="1.6"><circle cx="28" cy="28" r="27" stroke-opacity=".5"/><circle cx="20" cy="23" r="5.5"/><circle cx="36" cy="23" r="5.5"/><circle cx="28" cy="19" r="5.5"/><path d="M11 40c1.5-6 5-8.5 9-8.5M45 40c-1.5-6-5-8.5-9-8.5M18 42c1.5-7 5.5-10 10-10s8.5 3 10 10"/></svg>
+        <div><div class="k">For groups</div><h3>Private showing party</h3><p>Host a showing for your group — an easy way to shop the holidays together at wholesale pricing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM -->
+<section class="custom" id="custom">
+  <div class="wrap grid">
+    <div class="slot">
+      <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="60" cy="96" r="34"/><circle cx="60" cy="96" r="27" stroke-opacity=".5"/>
+        <path d="M44 46h32l10 14-26 22-26-22z" fill="rgba(198,161,91,.12)"/><path d="M34 60h52M50 46l-4 14 14 22 14-22-4-14"/>
+        <path d="M18 26l6 6M102 26l-6 6M60 14v8" stroke-opacity=".6"/>
+      </svg>
+      <span class="tag">Placeholder — custom piece photo</span>
+    </div>
+    <div>
+      <div class="eyebrow">Custom Jewelry</div>
+      <h2 class="h2" style="margin-top:18px">Have something in mind? <em>We’ll make it.</em></h2>
+      <p class="lead" style="margin-top:22px">Custom jewelry is available in diamond and gold — a one-of-a-kind gift for Hanukkah, Christmas, or Valentine’s Day.</p>
+      <div class="steps">
+        <div class="step"><span class="n">01</span><div><h4>Share your idea</h4><p>A sketch, a photo, or just a description.</p></div></div>
+        <div class="step"><span class="n">02</span><div><h4>Design it together</h4><p>Choose the stones, metal, and details.</p></div></div>
+        <div class="step"><span class="n">03</span><div><h4>Wear it</h4><p>Your piece, at wholesale pricing.</p></div></div>
+      </div>
+      <a href="#inquire" class="btn btn-navy">Start a custom piece</a>
+    </div>
+  </div>
+</section>
+
+<!-- POP-UP DETAILS -->
+<section class="details" id="popup">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="eyebrow">Pop-Up Details</div>
+      <h2 class="h2">Zisel Jewelry <em class="nb">Holiday Pop<span class="hy">-</span>Up</em></h2>
+      <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+    </div>
+    <div class="dgrid">
+      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="3" y="5" width="24" height="22"/><path d="M3 11h24M9 2v6M21 2v6"/></svg><div class="k">Dates</div><div class="v"><span class="ph">[DATES]</span></div></div>
+      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><path d="M15 28s9-9 9-16a9 9 0 0 0-18 0c0 7 9 16 9 16z"/><circle cx="15" cy="12" r="3"/></svg><div class="k">Location</div><div class="v"><span class="ph">[LOCATION]</span></div></div>
+      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="8" y="2" width="14" height="26" rx="3"/><path d="M13 24h4"/></svg><div class="k">Text to RSVP</div><div class="v"><span class="ph">[PHONE]</span></div></div>
+      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="3" y="3" width="24" height="24" rx="7"/><circle cx="15" cy="15" r="5.5"/><circle cx="22" cy="8" r="1" fill="#C6A15B"/></svg><div class="k">Instagram</div><div class="v"><span class="ph">[@INSTAGRAM]</span></div></div>
+      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="2" y="6" width="26" height="18"/><path d="M2 6l13 10 13-10"/></svg><div class="k">Email</div><div class="v"><span class="ph">[EMAIL]</span></div></div>
+    </div>
+    <p class="note">Private showings in Las Vegas by appointment — text or send an inquiry below.</p>
+  </div>
+</section>
+
+<!-- INQUIRY -->
+<section class="inquire" id="inquire">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow">Inquire</div>
+      <h2 class="h2" style="margin-top:18px">Book a <em>private showing</em></h2>
+      <p class="lead" style="margin-top:22px">Tell us what you’re shopping for and when works for you, and we’ll reach out to confirm.</p>
+      <div class="rule" style="margin-top:34px"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+      <p class="lead" style="margin-top:28px;font-size:20px">Prefer to text? <span class="ph">[PHONE]</span></p>
+    </div>
+    <!-- Demo form: not connected to any backend. Wire to a form service / email before launch. -->
+    <form id="inq" novalidate>
+      <div class="fgrid">
+        <div><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name"></div>
+        <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(702) 000-0000"></div>
+        <div><label for="f-int">Interest</label>
+          <select id="f-int" name="interest">
+            <option value="" selected disabled>Choose one</option>
+            <option>Private showing</option><option>Private showing party</option>
+            <option>Earrings</option><option>Bracelets</option><option>Necklaces</option><option>Custom jewelry</option>
+          </select></div>
+        <div><label for="f-date">Preferred date</label><input id="f-date" name="date" type="text" placeholder="e.g. Sat, Dec 12" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'"></div>
+        <div class="full"><label for="f-msg">Anything else? <span style="color:#9a9fab;font-weight:500">(optional)</span></label><textarea id="f-msg" name="message" placeholder="Gift ideas, budget, custom ideas…"></textarea></div>
+      </div>
+      <button type="submit" class="btn btn-gold">Request a showing</button>
+      <p class="formnote">Preview only — this form isn’t connected yet.</p>
+      <p class="thanks" id="thanks">Thank you — this is a design preview, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="on-navy" style="--gemline:#0A1830">
+  <div class="wrap fwrap">
+    <div class="wm">
+      <span class="name">Z<span class="i">ı<svg viewBox="0 0 100 82"><use href="#gem"/></svg></span>sel</span>
+      <span class="sub">Jewelry</span>
+    </div>
+    <div class="tl"><span>Wholesale diamond &amp; gold</span><span class="sep"> · </span><span>Las Vegas, Nevada</span></div>
+    <div class="contacts"><span class="ph">[PHONE]</span><span class="ph">[@INSTAGRAM]</span><span class="ph">[EMAIL]</span></div>
+    <nav class="fl" aria-label="Footer"><a href="#collection">Collection</a><a href="#private">Private Showings</a><a href="#custom">Custom</a><a href="#popup">Pop-Up</a><a href="#inquire">Inquire</a></nav>
+    <div class="copy">© Zisel Jewelry · Holiday Pop-Up</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('inq').addEventListener('submit',function(e){e.preventDefault();document.getElementById('thanks').style.display='block';});
+</script>
+</body>
+</html>
