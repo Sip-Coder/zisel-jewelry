@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zisel Jewelry — Holiday Pop-Up · Las Vegas</title>
-<meta name="description" content="Zisel Jewelry Holiday Pop-Up. Wholesale diamond and gold earrings, bracelets, necklaces, and custom jewelry. Private showings and showing parties in Las Vegas.">
+<title>Zisel Jewelry · Wholesale Diamond &amp; Gold Jewelry · Las Vegas</title>
+<meta name="description" content="Zisel Jewelry · Wholesale diamond and gold jewelry in Las Vegas. Earrings, bracelets, necklaces, and custom jewelry at wholesale pricing. Private showings and private showing parties.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -46,6 +46,13 @@ a{color:inherit;text-decoration:none}
 .on-navy .ph{color:var(--goldl);border-color:rgba(231,211,161,.7)}
 section{position:relative}
 
+/* ---------- announcement bar ---------- */
+.announce{background:var(--navy3);color:#fff;text-align:center;font-family:var(--caps);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:11px 20px;line-height:1.5}
+.announce a{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+.announce .g{color:var(--goldl)}
+.announce .d{width:4px;height:4px;background:var(--gold);transform:rotate(45deg);display:inline-block}
+.announce .go{color:var(--goldl);border-bottom:1px solid rgba(231,211,161,.5);padding-bottom:1px}
+
 /* ---------- header ---------- */
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
@@ -65,6 +72,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .hero .wm .name{font-size:clamp(96px,11vw,150px);color:#fff}
 .hero .wm .sub{font-size:clamp(14px,1.5vw,20px);color:var(--goldl);margin-top:14px}
 .hy{font-family:var(--text);font-style:normal;font-weight:500;margin:0 .04em}
+.hero .tagline{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,54px);line-height:1.12;color:#fff;margin-top:48px;max-width:820px;font-variation-settings:"opsz" 11}
+.hero .tagline em{font-style:italic;color:var(--goldl)}
 .hero .title{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(46px,5.6vw,76px);color:var(--goldl);line-height:1;margin-top:46px}
 .hero .hol{font-family:var(--caps);font-weight:500;font-size:clamp(12px,1.25vw,15px);letter-spacing:.28em;text-transform:uppercase;margin-top:24px;opacity:.92;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center}
 .hero .hol b{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);display:inline-block}
@@ -101,6 +110,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .private .h2 em{color:var(--goldl)}
 .private p.lead{color:rgba(255,255,255,.8);margin-top:24px}
 .private .ctas{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.private .ctas{align-items:center;gap:28px}
+.more-link{font-family:var(--caps);font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--goldl);border-bottom:1px solid rgba(231,211,161,.5);padding-bottom:3px;white-space:nowrap}
 .opts{display:grid;gap:20px}
 .opt{border:1px solid rgba(198,161,91,.45);background:rgba(255,255,255,.04);padding:34px 36px;display:grid;grid-template-columns:56px 1fr;gap:24px;align-items:start}
 .opt svg{width:56px;height:56px}
@@ -120,15 +131,23 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .step p{font-size:19px;color:var(--muted);margin-top:4px}
 .custom .btn{margin-top:36px}
 
-/* ---------- pop-up details ---------- */
-.details{background:var(--ivory);padding:110px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.dgrid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff}
-.d{padding:34px 22px 36px;text-align:center;border-left:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:14px}
-.d:first-child{border-left:0}
-.d svg{width:30px;height:30px}
-.d .k{font-family:var(--caps);font-weight:600;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--navy)}
-.d .v{font-size:20px}
-.details .note{text-align:center;margin-top:28px;font-size:19px;color:var(--muted);font-style:italic}
+/* ---------- holiday promo ---------- */
+.promo{padding:110px 0;background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pblock{position:relative;background:radial-gradient(120% 120% at 50% 0%,#1B3666 0%,var(--navy) 55%,var(--navy3) 100%);color:#fff;text-align:center;padding:84px 60px 80px;overflow:hidden}
+.pblock .frame{position:absolute;inset:18px;border:1.5px solid rgba(198,161,91,.6);pointer-events:none}
+.pblock .frame2{position:absolute;inset:26px;border:1px solid rgba(198,161,91,.25);pointer-events:none}
+.pblock .inner{position:relative;display:flex;flex-direction:column;align-items:center}
+.pblock .title{white-space:nowrap;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(44px,5vw,68px);color:var(--goldl);line-height:1;margin-top:20px;font-variation-settings:"opsz" 11}
+.pblock .hol{font-family:var(--caps);font-weight:500;font-size:14px;letter-spacing:.28em;text-transform:uppercase;margin-top:22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center}
+.pblock .hol b{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);display:inline-block}
+.pblock .rule{margin-top:32px}
+.pblock p.lead{color:rgba(255,255,255,.84);max-width:640px;margin-top:26px}
+.pdet{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px;width:100%;max-width:820px;border:1px solid rgba(198,161,91,.45)}
+.pdet .d{padding:24px 18px;border-left:1px solid rgba(198,161,91,.45);display:flex;flex-direction:column;align-items:center;gap:12px}
+.pdet .d:first-child{border-left:0}
+.pdet .k{font-family:var(--caps);font-weight:600;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.pdet .v{font-size:20px;color:#fff}
+.pblock .ctas{display:flex;gap:16px;margin-top:40px;flex-wrap:wrap;justify-content:center}
 
 /* ---------- inquiry ---------- */
 .inquire{padding:120px 0}
@@ -161,9 +180,6 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
 @media (max-width:1080px){
   .links{display:none}
   .cards{grid-template-columns:repeat(2,1fr)}
-  .dgrid{grid-template-columns:repeat(3,1fr)}
-  .d:nth-child(4){border-left:0}
-  .d:nth-child(n+4){border-top:1px solid var(--line)}
   .private .grid,.custom .grid,.inquire .grid{grid-template-columns:1fr;gap:56px}
   .strip .row{grid-template-columns:repeat(2,1fr)}
   .strip .cell:nth-child(3){border-left:0}
@@ -191,7 +207,6 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   .strip .k{font-size:10.5px;letter-spacing:.18em}
   .strip .v{font-size:17px}
   .collection,.private,.custom,.inquire{padding:84px 0}
-  .details{padding:80px 0}
   .sechead{margin-bottom:44px}
   .cards{gap:28px 16px}
   .card h3{font-size:23px;margin-top:16px}
@@ -200,16 +215,25 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   .opt{grid-template-columns:1fr;gap:16px;padding:28px 26px}
   .opt svg{width:44px;height:44px}
   .private .ctas .btn{width:100%}
-  .dgrid{grid-template-columns:1fr}
-  .d{border-left:0 !important;border-top:1px solid var(--line);flex-direction:row;justify-content:space-between;text-align:left;padding:20px 22px;gap:12px}
-  .d:first-child{border-top:0}
-  .d svg{display:none}
+  .promo{padding:64px 0}
+  .pblock{padding:64px 26px 60px}
+  .pblock .frame{inset:10px}.pblock .frame2{inset:16px}
+  .pblock .title{font-size:42px}
+  .pblock .hol{flex-direction:column;gap:10px;font-size:12px}
+  .pblock .hol b{display:none}
+  .pdet{grid-template-columns:1fr}
+  .pdet .d{border-left:0;border-top:1px solid rgba(198,161,91,.45);flex-direction:row;justify-content:space-between;padding:18px 18px}
+  .pdet .d:first-child{border-top:0}
+  .pblock .ctas{flex-direction:column;width:100%}
+  .pblock .ctas .btn{width:100%}
+  .announce{font-size:9.5px;letter-spacing:.14em;padding:10px 14px}
+  .announce .hide-sm{display:none}
+  .hero .tagline{font-size:34px;margin-top:38px}
   form{padding:30px 22px}
   .fgrid{grid-template-columns:1fr;gap:18px}
   .custom .btn{width:100%}
   footer .wm .name{font-size:54px}
   .strip .k{letter-spacing:.12em;white-space:nowrap}
-  .h2 em.nb{display:block}
   .opt h3{font-size:26px}
   footer .tl{display:flex;flex-direction:column;gap:6px}
   footer .tl .sep{display:none}
@@ -235,6 +259,8 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   </defs>
 </svg>
 
+<div class="announce"><a href="#holiday"><span class="g">Holiday Pop-Up</span><span class="d"></span><span class="hide-sm">Hanukkah · Christmas · Valentine’s Day</span><span class="d hide-sm"></span><span class="go">RSVP</span></a></div>
+
 <header>
   <div class="wrap nav">
     <a href="#top" class="wm" aria-label="Zisel Jewelry home">
@@ -243,9 +269,10 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
     </a>
     <nav class="links" aria-label="Primary">
       <a href="#collection">Collection</a>
-      <a href="#private">Private Showings</a>
       <a href="#custom">Custom</a>
-      <a href="#popup">Pop-Up</a>
+      <a href="#private">Private Showings</a>
+      <a href="#holiday">Holiday Pop-Up</a>
+      <a href="#inquire">Contact</a>
     </nav>
     <a href="#inquire" class="btn btn-navy"><span>Book<span class="long"> a showing</span></span></a>
   </div>
@@ -261,14 +288,12 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
       <span class="name">Z<span class="i">ı<svg viewBox="0 0 100 82"><use href="#gem"/></svg></span>sel</span>
       <span class="sub">Jewelry</span>
     </div>
-    <h1 class="title">Holiday Pop<span class="hy">-</span>Up</h1>
-    <div class="hol"><span>Hanukkah</span><b></b><span>Christmas</span><b></b><span>Valentine’s Day</span></div>
+    <h1 class="tagline">Wholesale diamond &amp; gold jewelry, <em>and custom pieces</em></h1>
     <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
-    <p class="lead">Wholesale diamond &amp; gold jewelry — earrings, bracelets, necklaces, and custom pieces — at wholesale pricing. Private showings available in Las Vegas.</p>
+    <p class="lead">Earrings, bracelets, and necklaces at wholesale pricing, drawn from a massive wholesale inventory. Private showings in Las Vegas.</p>
     <div class="ctas">
-      <a href="#inquire" class="btn btn-gold">Book a private showing</a>
-      <!-- Replace href with sms:+1XXXXXXXXXX once the RSVP number is confirmed -->
-      <a href="#popup" class="btn btn-line">Text to RSVP</a>
+      <a href="#collection" class="btn btn-gold">View the collection</a>
+      <a href="#inquire" class="btn btn-line">Book a private showing</a>
     </div>
   </div>
 </section>
@@ -290,7 +315,7 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
       <div class="eyebrow">The Collection</div>
       <h2 class="h2">Diamond &amp; gold, <em>at wholesale</em></h2>
       <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
-      <p class="lead">A holiday selection for gifting this season — Hanukkah, Christmas, and Valentine’s Day.</p>
+      <p class="lead">Earrings, bracelets, necklaces, and custom jewelry — all at wholesale pricing.</p>
     </div>
     <div class="cards">
       <!-- Each .slot is a placeholder for his own product photography -->
@@ -341,31 +366,6 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   </div>
 </section>
 
-<!-- PRIVATE SHOWINGS -->
-<section class="private on-navy" id="private" style="--gemline:#0F2142">
-  <div class="wrap grid">
-    <div>
-      <div class="eyebrow">In Vegas?</div>
-      <h2 class="h2" style="margin-top:18px">Private showings &amp; <em>private showing parties</em></h2>
-      <p class="lead">See the pieces in person, on your schedule. Book a one-on-one showing, or gather friends and family for a private showing party — with access to a massive wholesale inventory of diamond and gold jewelry.</p>
-      <div class="ctas">
-        <a href="#inquire" class="btn btn-gold">Book a private showing</a>
-        <a href="#popup" class="btn btn-line">Text to RSVP</a>
-      </div>
-    </div>
-    <div class="opts">
-      <div class="opt">
-        <svg viewBox="0 0 56 56" fill="none" stroke="#C6A15B" stroke-width="1.6"><circle cx="28" cy="28" r="27" stroke-opacity=".5"/><circle cx="28" cy="22" r="7"/><path d="M15 42c2-8 7-11 13-11s11 3 13 11"/></svg>
-        <div><div class="k">One-on-one</div><h3>Private showing</h3><p>A personal appointment to browse earrings, bracelets, necklaces, and talk through custom ideas.</p></div>
-      </div>
-      <div class="opt">
-        <svg viewBox="0 0 56 56" fill="none" stroke="#C6A15B" stroke-width="1.6"><circle cx="28" cy="28" r="27" stroke-opacity=".5"/><circle cx="20" cy="23" r="5.5"/><circle cx="36" cy="23" r="5.5"/><circle cx="28" cy="19" r="5.5"/><path d="M11 40c1.5-6 5-8.5 9-8.5M45 40c-1.5-6-5-8.5-9-8.5M18 42c1.5-7 5.5-10 10-10s8.5 3 10 10"/></svg>
-        <div><div class="k">For groups</div><h3>Private showing party</h3><p>Host a showing for your group — an easy way to shop the holidays together at wholesale pricing.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CUSTOM -->
 <section class="custom" id="custom">
   <div class="wrap grid">
@@ -380,7 +380,7 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
     <div>
       <div class="eyebrow">Custom Jewelry</div>
       <h2 class="h2" style="margin-top:18px">Have something in mind? <em>We’ll make it.</em></h2>
-      <p class="lead" style="margin-top:22px">Custom jewelry is available in diamond and gold — a one-of-a-kind gift for Hanukkah, Christmas, or Valentine’s Day.</p>
+      <p class="lead" style="margin-top:22px">Custom jewelry is available in diamond and gold — made one of a kind, for you or as a gift.</p>
       <div class="steps">
         <div class="step"><span class="n">01</span><div><h4>Share your idea</h4><p>A sketch, a photo, or just a description.</p></div></div>
         <div class="step"><span class="n">02</span><div><h4>Design it together</h4><p>Choose the stones, metal, and details.</p></div></div>
@@ -391,22 +391,54 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   </div>
 </section>
 
-<!-- POP-UP DETAILS -->
-<section class="details" id="popup">
+<!-- PRIVATE SHOWINGS -->
+<section class="private on-navy" id="private" style="--gemline:#0F2142">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow">In Vegas?</div>
+      <h2 class="h2" style="margin-top:18px">Private showings &amp; <em>private showing parties</em></h2>
+      <p class="lead">See the pieces in person, on your schedule. Book a one-on-one showing, or gather friends and family for a private showing party — with access to a massive wholesale inventory of diamond and gold jewelry.</p>
+      <div class="ctas">
+        <a href="#inquire" class="btn btn-gold">Book a private showing</a>
+        <a href="#inquire" class="more-link">Plan a showing party →</a>
+      </div>
+    </div>
+    <div class="opts">
+      <div class="opt">
+        <svg viewBox="0 0 56 56" fill="none" stroke="#C6A15B" stroke-width="1.6"><circle cx="28" cy="28" r="27" stroke-opacity=".5"/><circle cx="28" cy="22" r="7"/><path d="M15 42c2-8 7-11 13-11s11 3 13 11"/></svg>
+        <div><div class="k">One-on-one</div><h3>Private showing</h3><p>A personal appointment to browse earrings, bracelets, necklaces, and talk through custom ideas.</p></div>
+      </div>
+      <div class="opt">
+        <svg viewBox="0 0 56 56" fill="none" stroke="#C6A15B" stroke-width="1.6"><circle cx="28" cy="28" r="27" stroke-opacity=".5"/><circle cx="20" cy="23" r="5.5"/><circle cx="36" cy="23" r="5.5"/><circle cx="28" cy="19" r="5.5"/><path d="M11 40c1.5-6 5-8.5 9-8.5M45 40c-1.5-6-5-8.5-9-8.5M18 42c1.5-7 5.5-10 10-10s8.5 3 10 10"/></svg>
+        <div><div class="k">For groups</div><h3>Private showing party</h3><p>Host a showing for your group — an easy way to shop together at wholesale pricing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOLIDAY POP-UP PROMO -->
+<section class="promo" id="holiday">
   <div class="wrap">
-    <div class="sechead">
-      <div class="eyebrow">Pop-Up Details</div>
-      <h2 class="h2">Zisel Jewelry <em class="nb">Holiday Pop<span class="hy">-</span>Up</em></h2>
-      <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+    <div class="pblock on-navy" style="--gemline:#0F2142">
+      <div class="frame"></div><div class="frame2"></div>
+      <div class="inner">
+        <div class="eyebrow">Limited Season</div>
+        <h2 class="title">Holiday Pop<span class="hy">-</span>Up</h2>
+        <div class="hol"><span>Hanukkah</span><b></b><span>Christmas</span><b></b><span>Valentine’s Day</span></div>
+        <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+        <p class="lead">Shop diamond &amp; gold earrings, bracelets, necklaces, and custom pieces at wholesale pricing for the holidays. Private showings and showing parties available in Las Vegas.</p>
+        <div class="pdet">
+          <div class="d"><div class="k">Dates</div><div class="v"><span class="ph">[DATES]</span></div></div>
+          <div class="d"><div class="k">Location</div><div class="v"><span class="ph">[LOCATION]</span></div></div>
+          <div class="d"><div class="k">Text to RSVP</div><div class="v"><span class="ph">[PHONE]</span></div></div>
+        </div>
+        <div class="ctas">
+          <!-- Replace href with sms:+1XXXXXXXXXX once the RSVP number is confirmed -->
+          <a href="#inquire" class="btn btn-gold">RSVP for the pop-up</a>
+          <a href="#inquire" class="btn btn-line">Book a private showing</a>
+        </div>
+      </div>
     </div>
-    <div class="dgrid">
-      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="3" y="5" width="24" height="22"/><path d="M3 11h24M9 2v6M21 2v6"/></svg><div class="k">Dates</div><div class="v"><span class="ph">[DATES]</span></div></div>
-      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><path d="M15 28s9-9 9-16a9 9 0 0 0-18 0c0 7 9 16 9 16z"/><circle cx="15" cy="12" r="3"/></svg><div class="k">Location</div><div class="v"><span class="ph">[LOCATION]</span></div></div>
-      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="8" y="2" width="14" height="26" rx="3"/><path d="M13 24h4"/></svg><div class="k">Text to RSVP</div><div class="v"><span class="ph">[PHONE]</span></div></div>
-      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="3" y="3" width="24" height="24" rx="7"/><circle cx="15" cy="15" r="5.5"/><circle cx="22" cy="8" r="1" fill="#C6A15B"/></svg><div class="k">Instagram</div><div class="v"><span class="ph">[@INSTAGRAM]</span></div></div>
-      <div class="d"><svg viewBox="0 0 30 30" fill="none" stroke="#C6A15B" stroke-width="1.5"><rect x="2" y="6" width="26" height="18"/><path d="M2 6l13 10 13-10"/></svg><div class="k">Email</div><div class="v"><span class="ph">[EMAIL]</span></div></div>
-    </div>
-    <p class="note">Private showings in Las Vegas by appointment — text or send an inquiry below.</p>
   </div>
 </section>
 
@@ -414,11 +446,13 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
 <section class="inquire" id="inquire">
   <div class="wrap grid">
     <div>
-      <div class="eyebrow">Inquire</div>
-      <h2 class="h2" style="margin-top:18px">Book a <em>private showing</em></h2>
+      <div class="eyebrow">Contact</div>
+      <h2 class="h2" style="margin-top:18px">Get in touch, or <em>book a showing</em></h2>
       <p class="lead" style="margin-top:22px">Tell us what you’re shopping for and when works for you, and we’ll reach out to confirm.</p>
       <div class="rule" style="margin-top:34px"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
       <p class="lead" style="margin-top:28px;font-size:20px">Prefer to text? <span class="ph">[PHONE]</span></p>
+      <p class="lead" style="margin-top:8px;font-size:20px">Email <span class="ph">[EMAIL]</span></p>
+      <p class="lead" style="margin-top:8px;font-size:20px">Instagram <span class="ph">[@INSTAGRAM]</span></p>
     </div>
     <!-- Demo form: not connected to any backend. Wire to a form service / email before launch. -->
     <form id="inq" novalidate>
@@ -428,7 +462,7 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
         <div><label for="f-int">Interest</label>
           <select id="f-int" name="interest">
             <option value="" selected disabled>Choose one</option>
-            <option>Private showing</option><option>Private showing party</option>
+            <option>Holiday Pop-Up RSVP</option><option>Private showing</option><option>Private showing party</option>
             <option>Earrings</option><option>Bracelets</option><option>Necklaces</option><option>Custom jewelry</option>
           </select></div>
         <div><label for="f-date">Preferred date</label><input id="f-date" name="date" type="text" placeholder="e.g. Sat, Dec 12" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'"></div>
@@ -451,8 +485,8 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
     </div>
     <div class="tl"><span>Wholesale diamond &amp; gold</span><span class="sep"> · </span><span>Las Vegas, Nevada</span></div>
     <div class="contacts"><span class="ph">[PHONE]</span><span class="ph">[@INSTAGRAM]</span><span class="ph">[EMAIL]</span></div>
-    <nav class="fl" aria-label="Footer"><a href="#collection">Collection</a><a href="#private">Private Showings</a><a href="#custom">Custom</a><a href="#popup">Pop-Up</a><a href="#inquire">Inquire</a></nav>
-    <div class="copy">© Zisel Jewelry · Holiday Pop-Up</div>
+    <nav class="fl" aria-label="Footer"><a href="#collection">Collection</a><a href="#custom">Custom</a><a href="#private">Private Showings</a><a href="#holiday">Holiday Pop-Up</a><a href="#inquire">Contact</a></nav>
+    <div class="copy">© Zisel Jewelry · Las Vegas, Nevada</div>
   </div>
 </footer>
 
