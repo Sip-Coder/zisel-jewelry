@@ -5,6 +5,8 @@ The one file to read: competitors, prices, where Zisel wins, website plan, holid
 
 Project home for Zisel Jewelry: website, brand assets, and market research.
 
+Every editable file (Word, PowerPoint, Markdown, CSV) has a matching PDF beside it, so you can read everything right here in GitHub without an app.
+
 - **Live site:** https://sip-coder.github.io/zisel-jewelry/ (`index.html`)
 - **brand/**: preliminary logo concepts (A, B, C), stickers, text-message flyer, business card invite
 - **research/Zisel_Competitor_Research_merged.md**: merged team research (website/design, businesses/marketing, product/pricing)
