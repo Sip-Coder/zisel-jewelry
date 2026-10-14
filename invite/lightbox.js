@@ -7,7 +7,7 @@ const css=`.zlbx{position:fixed;inset:0;z-index:1000;background:rgba(4,10,26,.95
 .zlbx figure{margin:0;display:flex;flex-direction:column;align-items:center;max-width:100%;max-height:100%;transition:transform .25s ease,opacity .25s ease}
 .zlbx .fr{padding:5px;background:linear-gradient(135deg,#7a5a14,#c99a3a 18%,#fff1b8 32%,#d8b35a 46%,#8f6b1e 60%,#e8c870 76%,#fff5cc 88%,#a97d25);box-shadow:0 20px 60px rgba(0,0,0,.6);line-height:0}
 .zlbx img{display:block;max-width:min(92vw,1100px);max-height:calc(100svh - 190px);object-fit:contain;background:#0d1f45}
-.zlbx figcaption{margin-top:14px;text-align:center;color:#fff;font:500 clamp(16px,2.2vw,20px)/1.3 "ZPlay","Playfair Display",Georgia,serif;letter-spacing:.02em;padding:0 12px}
+.zlbx figcaption{display:none!important;margin-top:14px;text-align:center;color:#fff;font:500 clamp(16px,2.2vw,20px)/1.3 "ZPlay","Playfair Display",Georgia,serif;letter-spacing:.02em;padding:0 12px}
 .zlbx .ct{margin-top:6px;color:#e9cf7a;font:600 12px/1 "ZSans",Montserrat,system-ui,sans-serif;letter-spacing:.25em}
 .zlbx button{position:absolute;background:rgba(13,31,69,.7);color:#e9cf7a;border:1px solid rgba(233,207,122,.7);border-radius:50%;width:48px;height:48px;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
 .zlbx button:hover{background:rgba(233,207,122,.2)}

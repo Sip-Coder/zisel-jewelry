@@ -1,4 +1,4 @@
-# Zisel Jewelry · Invite to Private Showings (sample, 2026-10-13)
+# Zisel Jewelry · Book a Private Showing (sample, 2026-10-13)
 
 **Live invite:** https://sip-coder.github.io/zisel-jewelry/invite/ (tap the card to open it and see the collection)
 

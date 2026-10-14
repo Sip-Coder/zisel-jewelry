@@ -7,3 +7,6 @@ All 82 photos Jonathan selected (2026-10-13), plus z083 (the 4-piece pavé penda
 - `photos/zNNN.jpg`: dust-cleaned, web-compressed photos (1400px long edge); `photos/thumb-zNNN.jpg`: grid thumbnails
 - Cleaning: dust and lint specks on the felt were removed by inpainting; the jewelry was masked (with a margin) and left untouched
 - Tap any photo to open the viewer: swipe, arrow buttons or keyboard arrows to move, Esc to close
+
+## Oct 14, 2026 revision
+The gallery page is now just the photos: no title, captions or buttons. It shows 60 of the 83 photos in a shuffled order; near-duplicates and weaker shots were dropped. The full list is in /workspace/zisel/selected/gallery60.json. The photo files for all 83 are still in photos/.
