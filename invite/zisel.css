@@ -1,0 +1,21 @@
+@font-face{font-family:"ZPlay";src:url(fonts/playfair.ttf) format("truetype");font-weight:400 900;font-display:swap}
+@font-face{font-family:"ZSans";src:url(fonts/montserrat.ttf) format("truetype");font-weight:100 900;font-display:swap}
+:root{--navy:#0d1f45;--navy2:#162b5c;--ink:#0a1733;--gold1:#8a6a1f;--gold2:#e9cf7a;--gold3:#fff3c4;--gold4:#b8892c;--white:#fff;
+--gold:linear-gradient(135deg,#7a5a14 0%,#c99a3a 18%,#fff1b8 32%,#d8b35a 46%,#8f6b1e 60%,#e8c870 76%,#fff5cc 88%,#a97d25 100%)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:radial-gradient(ellipse at 50% 30%,#1b3470 0%,#0d1f45 55%,#060f26 100%);min-height:100%;color:#fff;font-family:"ZSans",system-ui,sans-serif}
+.goldtext{background:var(--gold);background-size:200% 200%;-webkit-background-clip:text;background-clip:text;color:transparent}
+/* metallic frame: gradient ring around content */
+.frame{position:relative;padding:var(--fw,10px);background:var(--gold);background-size:220% 220%;border-radius:var(--fr,6px);box-shadow:0 18px 50px rgba(0,0,0,.55),0 0 0 1px rgba(255,240,190,.35) inset}
+.frame>.inner{position:relative;background:var(--navy);border-radius:calc(var(--fr,6px) - 2px);height:100%;width:100%;overflow:hidden}
+.frame>.inner::after{content:"";position:absolute;inset:var(--hair,7px);border:1px solid rgba(233,207,122,.75);border-radius:2px;pointer-events:none}
+.shine{animation:shine 6s ease-in-out infinite}
+@keyframes shine{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media (prefers-reduced-motion:reduce){.shine{animation:none}}
+/* logo */
+.logo{display:flex;flex-direction:column;align-items:center;line-height:1}
+.logo .word{font-family:"ZPlay",Georgia,serif;font-weight:500;color:#fff;font-size:var(--ls,64px);letter-spacing:.01em;position:relative}
+.logo .word .i{position:relative;display:inline-block}
+.logo .word .gem{position:absolute;left:50%;top:-.02em;width:.42em;transform:translateX(-50%)}
+.logo .jw{font-family:"ZSans",sans-serif;font-weight:600;letter-spacing:.55em;margin-right:-.55em;font-size:calc(var(--ls,64px)*.2);margin-top:.55em}
+.logo .rule{height:2px;width:calc(var(--ls,64px)*1.6);background:var(--gold);margin-top:.5em}

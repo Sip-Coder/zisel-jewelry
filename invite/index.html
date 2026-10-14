@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zisel Jewelry · Invite to Private Showings</title>
+<meta name="description" content="Invite to Private Showings · Las Vegas Wholesale Jewelry · By appointment">
+<meta property="og:title" content="Zisel Jewelry · Invite to Private Showings"><meta property="og:description" content="Las Vegas Wholesale Jewelry · By appointment">
+<meta property="og:image" content="https://sip-coder.github.io/zisel-jewelry/invite/zisel-invite-poster.png"><meta name="theme-color" content="#0d1f45">
+<link rel="preload" href="fonts/playfair.ttf" as="font" crossorigin><link rel="stylesheet" href="zisel.css">
+<style>
+main{min-height:100svh;display:flex;flex-direction:column;align-items:center;padding:clamp(18px,5vw,48px) 16px 60px}
+.stage{--size:min(88vw,72svh,520px);width:var(--size);height:var(--size);perspective:1800px;margin-top:clamp(8px,4svh,48px);position:relative}
+.card{position:absolute;inset:0;--fw:calc(var(--size)*.03);--fr:6px;--hair:calc(var(--size)*.03)}
+.card .inner{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:9%;background:radial-gradient(ellipse at 50% 35%,#1d3770,#0d1f45 70%)}
+.cover{transform-origin:left center;transition:transform 1.2s cubic-bezier(.6,.05,.25,1),box-shadow 1.2s;z-index:2;cursor:pointer;backface-visibility:hidden}
+.opened .cover{transform:rotateY(-172deg);pointer-events:none}
+.cover .logo{--ls:calc(var(--size)*.17)}
+.kicker{font-size:calc(var(--size)*.026);letter-spacing:.4em;margin-right:-.4em;color:#e9cf7a;margin-top:calc(var(--size)*.06)}
+h1{font-family:"ZPlay",serif;font-weight:500;font-size:calc(var(--size)*.072);line-height:1.12;margin-top:calc(var(--size)*.025)}
+.sub{font-weight:600;font-size:calc(var(--size)*.03);letter-spacing:.16em;margin-right:-.16em;white-space:nowrap;text-transform:uppercase;margin-top:calc(var(--size)*.03)}
+.tap{margin-top:calc(var(--size)*.06);font-size:calc(var(--size)*.027);letter-spacing:.2em;color:#fff;opacity:.85;border:1px solid rgba(233,207,122,.8);border-radius:99px;padding:.7em 1.4em;background:rgba(0,0,0,.15)}
+.tap{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(233,207,122,.18)}}
+.inside .logo{--ls:calc(var(--size)*.1)}
+.inside p{font-size:calc(var(--size)*.034);line-height:1.6;margin-top:calc(var(--size)*.035);color:#dfe6f5}
+.inside .appt{font-family:"ZPlay",serif;font-style:italic;font-size:calc(var(--size)*.05);color:#fff;margin-top:calc(var(--size)*.04)}
+.inside .scroll{margin-top:calc(var(--size)*.05);font-size:calc(var(--size)*.026);letter-spacing:.3em;color:#e9cf7a}
+.reveal{width:min(1100px,100%);opacity:0;transform:translateY(30px);transition:opacity .9s .7s,transform .9s .7s;visibility:hidden}
+.opened .reveal{opacity:1;transform:none;visibility:visible}
+.sec{text-align:center;margin:56px 0 22px}.sec h2{font-family:"ZPlay",serif;font-weight:500;font-size:clamp(26px,4.4vw,40px)}
+.sec .bar{width:90px;height:3px;background:var(--gold);margin:14px auto 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(42vw,240px),1fr));gap:clamp(12px,2.2vw,22px)}
+.tile{margin:0}.tile .inner{border:0;display:block;aspect-ratio:1;cursor:zoom-in;padding:0}.tile .inner::after{inset:4px}
+.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.tile:hover img{transform:scale(1.05)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:-1.9em;font-size:12px;letter-spacing:.08em;color:#cdd6ea;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile{margin-bottom:1.9em}
+.contact{--fw:6px;margin:40px auto 0;max-width:640px}.contact .inner{padding:34px 26px;text-align:center}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;text-align:left;max-width:420px;margin:18px auto 0;font-size:15px}
+.contact dt{color:#e9cf7a;letter-spacing:.18em;font-size:12px;padding-top:2px}.contact dd{color:#fff}
+.ph{color:#9fb0d4;font-style:italic}
+footer{margin-top:40px;font-size:12px;color:#8fa0c4;letter-spacing:.15em;text-align:center}
+.lb{position:fixed;inset:0;background:rgba(4,10,26,.94);display:none;align-items:center;justify-content:center;z-index:20;padding:20px}.lb.on{display:flex}
+.lb .frame{--fw:6px;max-width:94vw;max-height:88svh}.lb img{display:block;max-width:calc(94vw - 12px);max-height:calc(88svh - 12px)}
+.lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:#e9cf7a;font-size:36px;cursor:pointer}
+@media (max-width:480px){.contact dl{grid-template-columns:1fr;gap:4px}.contact dd{margin-bottom:10px}}</style></head><body><main id="m">
+<div class="stage" id="stage">
+ <div class="card frame inside shine"><div class="inner"><div class="logo"><div class="word">Z<span class="i">ı<img class="gem" src="gem.svg" alt=""></span>sel</div><div class="jw goldtext">JEWELRY</div></div>
+  <p>You are personally invited to a private showing of fine and wholesale jewelry in Las Vegas.</p>
+  <div class="appt">By appointment only</div><div class="scroll">▼ VIEW THE COLLECTION</div></div></div>
+ <div class="card frame cover shine" id="cover" role="button" tabindex="0" aria-label="Open the invitation"><div class="inner"><div class="logo"><div class="word">Z<span class="i">ı<img class="gem" src="gem.svg" alt=""></span>sel</div><div class="jw goldtext">JEWELRY</div></div>
+  <div class="kicker">YOU ARE INVITED</div><h1 class="goldtext">Invite to Private&nbsp;Showings</h1>
+  <div class="sub">Las Vegas Wholesale Jewelry</div><div class="tap">TAP TO OPEN</div></div></div>
+</div>
+<section class="reveal" id="gallery">
+ <div class="sec"><h2>The Collection</h2><div class="bar"></div></div>
+ <div class="grid"><figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-01.jpg" aria-label="Pavé pendants"><img loading="lazy" src="photos/thumb-zisel-01.jpg" alt="Pavé pendants" width="1050" height="1400"></button><figcaption>Pavé pendants</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-02.jpg" aria-label="Diamond rings"><img loading="lazy" src="photos/thumb-zisel-02.jpg" alt="Diamond rings" width="1050" height="1400"></button><figcaption>Diamond rings</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-03.jpg" aria-label="Tennis bracelets"><img loading="lazy" src="photos/thumb-zisel-03.jpg" alt="Tennis bracelets" width="1400" height="1050"></button><figcaption>Tennis bracelets</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-04.jpg" aria-label="Sapphire pendants"><img loading="lazy" src="photos/thumb-zisel-04.jpg" alt="Sapphire pendants" width="1050" height="1400"></button><figcaption>Sapphire pendants</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-05.jpg" aria-label="Opal & turquoise"><img loading="lazy" src="photos/thumb-zisel-05.jpg" alt="Opal & turquoise" width="1050" height="1400"></button><figcaption>Opal & turquoise</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-06.jpg" aria-label="Gold Star of David"><img loading="lazy" src="photos/thumb-zisel-06.jpg" alt="Gold Star of David" width="1050" height="1400"></button><figcaption>Gold Star of David</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-07.jpg" aria-label="Ruby pendants"><img loading="lazy" src="photos/thumb-zisel-07.jpg" alt="Ruby pendants" width="1050" height="1400"></button><figcaption>Ruby pendants</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-08.jpg" aria-label="Diamond crosses"><img loading="lazy" src="photos/thumb-zisel-08.jpg" alt="Diamond crosses" width="1400" height="1050"></button><figcaption>Diamond crosses</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-09.jpg" aria-label="Heart pendant"><img loading="lazy" src="photos/thumb-zisel-09.jpg" alt="Heart pendant" width="1050" height="1400"></button><figcaption>Heart pendant</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-10.jpg" aria-label="Gold medallions"><img loading="lazy" src="photos/thumb-zisel-10.jpg" alt="Gold medallions" width="1050" height="1400"></button><figcaption>Gold medallions</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-11.jpg" aria-label="Gold pendant"><img loading="lazy" src="photos/thumb-zisel-11.jpg" alt="Gold pendant" width="1050" height="1400"></button><figcaption>Gold pendant</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-12.jpg" aria-label="Diamond hoops"><img loading="lazy" src="photos/thumb-zisel-12.jpg" alt="Diamond hoops" width="1400" height="1050"></button><figcaption>Diamond hoops</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-13.jpg" aria-label="Diamond bangles"><img loading="lazy" src="photos/thumb-zisel-13.jpg" alt="Diamond bangles" width="1400" height="1050"></button><figcaption>Diamond bangles</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-14.jpg" aria-label="Gemstone rings"><img loading="lazy" src="photos/thumb-zisel-14.jpg" alt="Gemstone rings" width="1400" height="1050"></button><figcaption>Gemstone rings</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-15.jpg" aria-label="Cocktail rings"><img loading="lazy" src="photos/thumb-zisel-15.jpg" alt="Cocktail rings" width="1050" height="1400"></button><figcaption>Cocktail rings</figcaption></figure>
+<figure class="tile frame" style="--fw:4px;--fr:4px"><button class="inner" data-full="photos/zisel-16.jpg" aria-label="Gemstone bracelets"><img loading="lazy" src="photos/thumb-zisel-16.jpg" alt="Gemstone bracelets" width="1400" height="1050"></button><figcaption>Gemstone bracelets</figcaption></figure></div>
+ <div class="contact frame"><div class="inner"><h2 style="font-family:ZPlay,serif;font-weight:500;font-size:28px">Private Showings · <span class="goldtext">By Appointment</span></h2>
+  <dl><dt>CALL / TEXT</dt><dd class="ph">[phone number]</dd><dt>EMAIL</dt><dd class="ph">[email]</dd><dt>LOCATION</dt><dd>Las Vegas, NV · <span class="ph">[address shared when appointment is confirmed]</span></dd><dt>HOURS</dt><dd>By appointment only</dd></dl></div></div>
+ <footer>ZISEL JEWELRY · LAS VEGAS WHOLESALE JEWELRY</footer>
+</section></main>
+<div class="lb" id="lb"><button aria-label="Close">×</button><div class="frame shine"><div class="inner"><img alt=""></div></div></div>
+<script>
+const m=document.getElementById('m'),c=document.getElementById('cover');
+function open_(){m.classList.add('opened');setTimeout(()=>{if(innerHeight<900)document.getElementById('gallery').scrollIntoView({behavior:'smooth'})},1600)}
+c.addEventListener('click',open_);c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')open_()});
+if(/[?&]open/.test(location.search))m.classList.add('opened');
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.tile .inner').forEach(b=>b.addEventListener('click',()=>{li.src=b.dataset.full;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+</script></body></html>
