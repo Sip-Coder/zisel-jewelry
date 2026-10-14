@@ -386,8 +386,12 @@ img[src*="zisel-04.jpg"]{object-position:50% 100%}
     <div class="ctas"><a href="invite/" class="btn btn-gold">Open the private showing invite</a><a href="#inquire" class="btn btn-line">Book a private showing</a></div>
   </div>
 </section>
-<div class="zlb" id="zlb"><img alt=""></div>
-<script>(()=>{const l=document.getElementById('zlb'),i=l.querySelector('img');document.querySelectorAll('.gtile button').forEach(b=>b.onclick=()=>{i.src=b.dataset.full;l.classList.add('on')});l.onclick=()=>l.classList.remove('on')})()</script>
+<script src="invite/lightbox.js"></script>
+<script>addEventListener('DOMContentLoaded',()=>{const L=[];const full=s=>s.replace('thumb-','');
+document.querySelectorAll('#collection .slot.photo img').forEach(im=>L.push({el:im.parentElement,src:full(im.getAttribute('src')),cap:im.alt}));
+document.querySelectorAll('.gtile').forEach(f=>{const b=f.querySelector('button');L.push({el:b,src:b.dataset.full,cap:f.querySelector('figcaption').textContent})});
+document.querySelectorAll('#custom .slot.photo img').forEach(im=>L.push({el:im.parentElement,src:im.getAttribute('src'),cap:im.alt}));
+ZLB.init(L)})</script>
 
 <!-- CUSTOM -->
 <section class="custom" id="custom">
