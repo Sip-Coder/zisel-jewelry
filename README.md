@@ -3,7 +3,7 @@
 ## ✉️ New: [Invite to Private Showings](https://sip-coder.github.io/zisel-jewelry/invite/) · [PDF](invite/Zisel_Invite_Private_Showings.pdf) · [Poster](invite/zisel-invite-poster.png)
 
 ## 👉 Start here: [Zisel Market Snapshot (PDF)](Zisel_Market_Snapshot.pdf)
-The one file to read: competitors, prices, where Zisel wins, website plan, holiday dates, and decisions needed.
+The one file to read: competitors, prices, where Zisel wins, website plan, key dates for celebrations, weddings, and special events, and decisions needed.
 
 Project home for Zisel Jewelry: website, brand assets, and market research.
 
