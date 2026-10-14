@@ -10,6 +10,7 @@ Project home for Zisel Jewelry: website, brand assets, and market research.
 Every editable file (Word, PowerPoint, Markdown, CSV) has a matching PDF beside it, so you can read everything right here in GitHub without an app.
 
 - **Live site:** https://sip-coder.github.io/zisel-jewelry/ (`index.html`)
+- **collection/**: the full 82-photo collection page ([live](https://sip-coder.github.io/zisel-jewelry/collection/))
 - **invite/**: the e-invite page, PDF and textable poster (see invite/README.md)
 - **brand/**: updated gold-frame logos (primary, horizontal, monogram seal) and square card invite; earlier concepts in brand/archive/
 - **research/Zisel_Competitor_Research_merged.md**: merged team research (website/design, businesses/marketing, product/pricing)

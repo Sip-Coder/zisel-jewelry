@@ -5,7 +5,7 @@
 - `index.html`: the e-invite (square gold-framed card that opens into a 16-photo gallery with tap-to-zoom)
 - `Zisel_Invite_Private_Showings.pdf`: PDF version (cover, welcome page, 4 photo pages, contact page)
 - `zisel-invite-poster.png` / `.jpg`: textable poster (invite line + 6 photos), 1080×1350
-- `photos/`: the 16 selected photos, lightly color-corrected and compressed for web (`thumb-*` for the grid)
+- Photos now come from `../collection/photos/` (Jonathan's 82 selected photos, dust-cleaned)
 - `print/`: HTML sources used to render the logos, poster, card and PDF
 
 Contact: Jonathan Shulkin · Call/Text 725.254.6937 · Las Vegas, NV · By appointment.
