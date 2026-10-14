@@ -239,7 +239,32 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   footer .tl{display:flex;flex-direction:column;gap:6px}
   footer .tl .sep{display:none}
 }
+
+/* real photos + metallic gold frame update */
+:root{--goldgrad:linear-gradient(135deg,#7a5a14 0%,#c99a3a 18%,#fff1b8 32%,#d8b35a 46%,#8f6b1e 60%,#e8c870 76%,#fff5cc 88%,#a97d25 100%)}
+.slot.photo{background:#0d1f45;border:0;padding:5px;background-image:var(--goldgrad)}
+.slot.photo img{position:absolute;inset:5px;width:calc(100% - 10px);height:calc(100% - 10px);object-fit:cover;transition:transform .6s}
+.slot.photo:before{z-index:1;inset:12px;border-color:rgba(255,241,184,.6)}
+.card:hover .slot.photo img{transform:scale(1.04)}
+.hero .frame{border:7px solid transparent;border-image:var(--goldgrad) 1;box-shadow:0 0 30px rgba(233,207,122,.15)}
+.hero .frame2{border-color:rgba(233,207,122,.55)}
+header .wm{position:relative;padding:6px 14px 7px;border:2px solid transparent;border-image:var(--goldgrad) 1}
+.gallery{background:radial-gradient(110% 90% at 50% 0%,#1B3666 0%,#0d1f45 60%,#081631 100%);color:#fff;padding:110px 0}
+.gallery .h2{color:#fff}.gallery .lead{color:rgba(255,255,255,.82)}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:54px}
+.gtile{margin:0;padding:4px;background:var(--goldgrad);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.gtile button{display:block;width:100%;aspect-ratio:1;border:0;padding:0;position:relative;overflow:hidden;cursor:zoom-in;background:#0d1f45}
+.gtile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}.gtile:hover img{transform:scale(1.05)}
+.gtile figcaption{background:#0d1f45;color:#dfe6f5;font-family:var(--caps);font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:10px 6px}
+.gallery .ctas{display:flex;justify-content:center;gap:16px;margin-top:48px;flex-wrap:wrap}
+img[src*="zisel-04.jpg"]{object-position:50% 100%}
+.zlb{position:fixed;inset:0;background:rgba(4,10,26,.94);display:none;align-items:center;justify-content:center;z-index:99;padding:20px}.zlb.on{display:flex}
+.zlb img{max-width:94vw;max-height:88vh;border:5px solid #d8b35a}
+@media (max-width:1080px){.ggrid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.ggrid{grid-template-columns:repeat(2,1fr);gap:14px}.gallery{padding:72px 0}.gtile figcaption{font-size:10px;letter-spacing:.1em}}
 </style>
+<meta property="og:image" content="https://sip-coder.github.io/zisel-jewelry/brand/logo_zisel_gold-frame_primary.png">
+<link rel="icon" href="brand/logo_zisel_monogram-seal.png">
 </head>
 <body>
 
@@ -325,45 +350,22 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
     <div class="cards">
       <!-- Each .slot is a placeholder for his own product photography -->
       <a class="card" href="#inquire">
-        <div class="slot">
-          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M42 12a8 8 0 1 1 0 16"/><line x1="42" y1="28" x2="42" y2="52"/><circle cx="42" cy="58" r="6"/>
-            <path d="M42 64l-14 18 14 38 14-38z" fill="#FFFFFF" stroke="#7F8FA8"/><path d="M28 82h28M35 82l7 38 7-38" stroke="#7F8FA8" stroke-width="1.6"/>
-            <path d="M82 12a8 8 0 1 1 0 16"/><line x1="82" y1="28" x2="82" y2="52"/><circle cx="82" cy="58" r="6"/>
-            <path d="M82 64l-14 18 14 38 14-38z" fill="#FFFFFF" stroke="#7F8FA8"/><path d="M68 82h28M75 82l7 38 7-38" stroke="#7F8FA8" stroke-width="1.6"/>
-          </svg>
-          <span class="tag">Photo placeholder</span>
+        <div class="slot photo"><img src="invite/photos/thumb-zisel-12.jpg" alt="Diamond hoop earrings" loading="lazy" width="640" height="853">
         </div>
         <h3>Earrings</h3><p>Diamond &amp; gold</p><span class="more">Inquire →</span>
       </a>
       <a class="card" href="#inquire">
-        <div class="slot">
-          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round">
-            <ellipse cx="60" cy="78" rx="46" ry="24"/><ellipse cx="60" cy="72" rx="46" ry="24" stroke-opacity=".5"/>
-            <g fill="#FFFFFF" stroke="#7F8FA8" stroke-width="1.6"><circle cx="14" cy="76" r="4"/><circle cx="26" cy="92" r="4"/><circle cx="43" cy="100" r="4"/><circle cx="60" cy="102" r="4.5"/><circle cx="77" cy="100" r="4"/><circle cx="94" cy="92" r="4"/><circle cx="106" cy="76" r="4"/></g>
-          </svg>
-          <span class="tag">Photo placeholder</span>
+        <div class="slot photo"><img src="invite/photos/thumb-zisel-03.jpg" alt="Diamond tennis bracelets" loading="lazy" width="640" height="853">
         </div>
         <h3>Bracelets</h3><p>Diamond &amp; gold</p><span class="more">Inquire →</span>
       </a>
       <a class="card" href="#inquire">
-        <div class="slot">
-          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 14c4 46 22 72 46 80M106 14c-4 46-22 72-46 80"/>
-            <path d="M60 94l-12 14 12 28 12-28z" fill="#FFFFFF" stroke="#7F8FA8"/><path d="M48 108h24M54 108l6 28 6-28" stroke="#7F8FA8" stroke-width="1.6"/>
-          </svg>
-          <span class="tag">Photo placeholder</span>
+        <div class="slot photo"><img src="invite/photos/thumb-zisel-01.jpg" alt="Diamond pavé pendants" loading="lazy" width="640" height="853">
         </div>
         <h3>Necklaces</h3><p>Diamond &amp; gold</p><span class="more">Inquire →</span>
       </a>
       <a class="card" href="#custom">
-        <div class="slot">
-          <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="60" cy="96" r="34"/><circle cx="60" cy="96" r="27" stroke-opacity=".5"/>
-            <path d="M44 46h32l10 14-26 22-26-22z" fill="#FFFFFF" stroke="#7F8FA8"/><path d="M34 60h52M50 46l-4 14 14 22 14-22-4-14" stroke="#7F8FA8" stroke-width="1.6"/>
-            <path d="M18 26l6 6M102 26l-6 6M60 14v8" stroke-opacity=".6"/>
-          </svg>
-          <span class="tag">Photo placeholder</span>
+        <div class="slot photo"><img src="invite/photos/thumb-zisel-15.jpg" alt="Sapphire and gemstone cocktail rings" loading="lazy" width="640" height="853">
         </div>
         <h3>Custom</h3><p>Designed to your idea</p><span class="more">Start a piece →</span>
       </a>
@@ -371,16 +373,26 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   </div>
 </section>
 
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="eyebrow">From the showroom</div>
+      <h2 class="h2">The Collection, <em>up close</em></h2>
+      <div class="rule"><i></i><svg viewBox="0 0 100 82"><use href="#gem"/></svg><i></i></div>
+      <p class="lead">A few pieces from our wholesale inventory. Tap any photo to see it larger.</p>
+    </div>
+    <div class="ggrid"><figure class="gtile"><button data-full="invite/photos/zisel-01.jpg" aria-label="View Pavé pendants"><img src="invite/photos/thumb-zisel-01.jpg" alt="Pavé pendants" loading="lazy" width="640" height="640"></button><figcaption>Pavé pendants</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-02.jpg" aria-label="View Diamond rings"><img src="invite/photos/thumb-zisel-02.jpg" alt="Diamond rings" loading="lazy" width="640" height="640"></button><figcaption>Diamond rings</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-03.jpg" aria-label="View Tennis bracelets"><img src="invite/photos/thumb-zisel-03.jpg" alt="Tennis bracelets" loading="lazy" width="640" height="640"></button><figcaption>Tennis bracelets</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-04.jpg" aria-label="View Sapphire pendants"><img src="invite/photos/thumb-zisel-04.jpg" alt="Sapphire pendants" loading="lazy" width="640" height="640"></button><figcaption>Sapphire pendants</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-05.jpg" aria-label="View Opal & turquoise"><img src="invite/photos/thumb-zisel-05.jpg" alt="Opal & turquoise" loading="lazy" width="640" height="640"></button><figcaption>Opal & turquoise</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-06.jpg" aria-label="View Star of David"><img src="invite/photos/thumb-zisel-06.jpg" alt="Star of David" loading="lazy" width="640" height="640"></button><figcaption>Star of David</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-07.jpg" aria-label="View Ruby pendants"><img src="invite/photos/thumb-zisel-07.jpg" alt="Ruby pendants" loading="lazy" width="640" height="640"></button><figcaption>Ruby pendants</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-08.jpg" aria-label="View Diamond crosses"><img src="invite/photos/thumb-zisel-08.jpg" alt="Diamond crosses" loading="lazy" width="640" height="640"></button><figcaption>Diamond crosses</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-10.jpg" aria-label="View Gold medallions"><img src="invite/photos/thumb-zisel-10.jpg" alt="Gold medallions" loading="lazy" width="640" height="640"></button><figcaption>Gold medallions</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-12.jpg" aria-label="View Diamond hoops"><img src="invite/photos/thumb-zisel-12.jpg" alt="Diamond hoops" loading="lazy" width="640" height="640"></button><figcaption>Diamond hoops</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-13.jpg" aria-label="View Diamond bangles"><img src="invite/photos/thumb-zisel-13.jpg" alt="Diamond bangles" loading="lazy" width="640" height="640"></button><figcaption>Diamond bangles</figcaption></figure><figure class="gtile"><button data-full="invite/photos/zisel-16.jpg" aria-label="View Gemstone bracelets"><img src="invite/photos/thumb-zisel-16.jpg" alt="Gemstone bracelets" loading="lazy" width="640" height="640"></button><figcaption>Gemstone bracelets</figcaption></figure></div>
+    <div class="ctas"><a href="invite/" class="btn btn-gold">Open the private showing invite</a><a href="#inquire" class="btn btn-line">Book a private showing</a></div>
+  </div>
+</section>
+<div class="zlb" id="zlb"><img alt=""></div>
+<script>(()=>{const l=document.getElementById('zlb'),i=l.querySelector('img');document.querySelectorAll('.gtile button').forEach(b=>b.onclick=()=>{i.src=b.dataset.full;l.classList.add('on')});l.onclick=()=>l.classList.remove('on')})()</script>
+
 <!-- CUSTOM -->
 <section class="custom" id="custom">
   <div class="wrap grid">
-    <div class="slot">
-      <svg class="art" viewBox="0 0 120 150" fill="none" stroke="#C6A15B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="60" cy="96" r="34"/><circle cx="60" cy="96" r="27" stroke-opacity=".5"/>
-        <path d="M44 46h32l10 14-26 22-26-22z" fill="#FFFFFF" stroke="#7F8FA8"/><path d="M34 60h52M50 46l-4 14 14 22 14-22-4-14" stroke="#7F8FA8" stroke-width="1.6"/>
-        <path d="M18 26l6 6M102 26l-6 6M60 14v8" stroke-opacity=".6"/>
-      </svg>
-      <span class="tag">Placeholder — custom piece photo</span>
+    <div class="slot photo"><img src="invite/photos/thumb-zisel-14.jpg" alt="Gemstone rings" loading="lazy" width="640" height="853">
     </div>
     <div>
       <div class="eyebrow">Custom Jewelry</div>
@@ -490,7 +502,7 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
     </div>
     <div class="tl"><span>Wholesale diamond &amp; gold</span><span class="sep"> · </span><span>Las Vegas, Nevada</span></div>
     <div class="contacts"><span class="ph">[PHONE]</span><span class="ph">[@INSTAGRAM]</span><span class="ph">[EMAIL]</span></div>
-    <nav class="fl" aria-label="Footer"><a href="#collection">Collection</a><a href="#custom">Custom</a><a href="#private">Private Showings</a><a href="#holiday">Holiday Pop-Up</a><a href="#inquire">Contact</a></nav>
+    <nav class="fl" aria-label="Footer"><a href="#collection">Collection</a><a href="#gallery">Gallery</a><a href="#custom">Custom</a><a href="#private">Private Showings</a><a href="#holiday">Holiday Pop-Up</a><a href="#inquire">Contact</a></nav>
     <div class="copy">© Zisel Jewelry · Las Vegas, Nevada</div>
   </div>
 </footer>
