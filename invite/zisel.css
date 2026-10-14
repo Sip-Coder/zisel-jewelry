@@ -22,3 +22,4 @@ html,body{background:radial-gradient(ellipse at 50% 30%,#1b3470 0%,#0d1f45 55%,#
 
 .inner[style*="aspect-ratio"]>img,.tile .inner>img{position:absolute;inset:0}
 img[src*="z076.jpg"]{object-position:15% 50%}
+img[src*="z019.jpg"]{object-position:30% 50%}
