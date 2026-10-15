@@ -12,4 +12,7 @@ All 82 photos Jonathan selected (2026-10-13), plus z083 (the 4-piece pavé penda
 The gallery page is now just the photos: no title, captions or buttons. It shows 60 of the 83 photos in a shuffled order; near-duplicates and weaker shots were dropped. The full list is in /workspace/zisel/selected/gallery60.json. The photo files for all 83 are still in photos/.
 
 ## Oct 14, 2026 footer revision
-The footer is now six centered lines: ZISEL JEWELRY / Wholesale Diamond and Fine Jewelry / Book now · appointment only / Jonathan Shulkin / Call/Text 725.254.6937 (tap to call) / Las Vegas, NV. The Invite and Main website links were removed, per the client.
+The footer is now six centered lines: ZISEL JEWELRY / Wholesale Diamond & Fine Jewelry / Viewing by appointment only / Jonathan Shulkin / Call/Text 725.254.6937 (tap to call) / Las Vegas, NV. The Invite and Main website links were removed, per the client.
+
+## Oct 14, 2026 copy update
+"Viewing by appointment only" replaces "Book now · appointment only"; "Sample gallery of extensive inventory" replaces the old gallery line; tagline is "Wholesale Diamond & Fine Jewelry".
