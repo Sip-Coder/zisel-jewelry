@@ -16,3 +16,4 @@ The footer is now six centered lines: ZISEL JEWELRY / Wholesale Diamond & Fine J
 
 ## Oct 14, 2026 copy update
 "Viewing by appointment only" replaces "Book now · appointment only"; "Sample gallery of extensive inventory" replaces the old gallery line; tagline is "Wholesale Diamond & Fine Jewelry".
+The gallery header (and the main site gallery intro) reads "Sample gallery of extensive wholesale diamond & fine jewelry inventory".
