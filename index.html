@@ -171,7 +171,7 @@ footer{background:var(--navy3);color:rgba(255,255,255,.78);padding:80px 0 40px}
 .fwrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
 footer .wm .name{font-size:64px;color:#fff}
 footer .wm .sub{font-size:11px;color:var(--gold);margin-top:8px}
-footer .tl{font-family:var(--caps);font-weight:500;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--goldl)}
+footer .tl{white-space:nowrap;font-family:var(--caps);font-weight:500;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--goldl)}
 footer .contacts{display:flex;gap:14px 28px;flex-wrap:wrap;justify-content:center;font-size:19px}
 footer .fl{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;font-family:var(--caps);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
 footer .fl a:hover{color:var(--goldl)}
@@ -236,7 +236,7 @@ footer .copy{border-top:1px solid rgba(198,161,91,.25);width:100%;padding-top:26
   footer .wm .name{font-size:54px}
   .strip .k{letter-spacing:.12em;white-space:nowrap}
   .opt h3{font-size:26px}
-  footer .tl{display:flex;flex-direction:column;gap:6px}
+  footer .tl{display:flex;flex-direction:column;gap:6px;font-size:11px;letter-spacing:.1em}
   footer .tl .sep{display:none}
 }
 
@@ -386,7 +386,7 @@ img[src*="z076.jpg"]{object-position:15% 50%}img[src*="z019.jpg"]{object-positio
     <div class="ctas"><a href="collection/" class="btn btn-gold">View Gallery</a><a href="invite/" class="btn btn-line">Open the private showing invite</a><a href="#inquire" class="btn btn-line">Book a private showing</a></div>
   </div>
 </section>
-<script src="invite/lightbox.js"></script>
+<script src="invite/lightbox.js?v=5"></script>
 <script>addEventListener('DOMContentLoaded',()=>{const L=[];const full=s=>s.replace('thumb-','');
 document.querySelectorAll('#collection .slot.photo img').forEach(im=>L.push({el:im.parentElement,src:full(im.getAttribute('src')),cap:''}));
 document.querySelectorAll('.gtile').forEach(f=>{const b=f.querySelector('button');L.push({el:b,src:b.dataset.full,cap:''})});
