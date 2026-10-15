@@ -12,3 +12,5 @@ Contact: Jonathan Shulkin / Call/Text 725.254.6937 (two lines) · Las Vegas, NV 
 
 ## Logo update
 New logo files in `brand/` use a shiny metallic gold frame: `logo_zisel_gold-frame_primary.png` (navy), `logo_zisel_gold-frame_horizontal.png` (white), `logo_zisel_monogram-seal.png` (round Z seal), `card_invite_gold-frame_1080.png`. The previous concepts, stickers, flyer and card are kept in `brand/archive/`.
+
+- Oct 14, 2026: per the client, the Star of David (z076) and cross (z080) photos on the invite page and PDF were replaced with diamond rings (z036) and diamond bracelets (z053).
