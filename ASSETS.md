@@ -306,3 +306,8 @@ Not in the public repo (private): invoices, time logs, Shulkin's messages/transc
 ## Private repo
 
 Invoice, time log and client communications are kept in the private repo **Sip-Coder/zisel-jewelry-private** (access restricted).
+
+## Marketing trailers (non-religious, renamed) — sent Oct 18 ~6:55 PM PT
+- deliverables/videos/zisel-marketing-jazz-brunch.mp4, -lobby-time.mp4, -bossa-antigua.mp4, -silent.mp4 (copies of the *-nonreligious renders; no crosses, Stars of David or hamsa).
+- Sent to Shulkin by Jonathan himself on WhatsApp, with the caption "these are versions without any of the religious symbols just in case". One earlier copy (jazz-brunch-nonreligious) also went through at 6:50 PM.
+- Music credit (CC BY 4.0) is still required when posted publicly.
