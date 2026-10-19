@@ -30,6 +30,7 @@ Every editable file should keep a matching PDF beside it (repo rule). This file�
 | **~6:28 PM Oct 18** | **No-website** photo business cards (square, story, 3.5×2) + **poster 4** + **cafe-music trailer**. Silent trailer and Kevin-MacLeod music trials **not** in this send. |
 | **6:32 PM Oct 18** | **Silent trailer** (`zisel-trailer-silent.mp4`, same 31 s cut, no audio). No caption. |
 | **~6:36 PM Oct 18** | **Jazz Brunch**, **Lobby Time** and **Bossa Antigua** trailers, followed by a note naming each song (all Kevin MacLeod) and the license: CC BY 4.0, commercial use OK, credit line required when posted publicly (exact text in `/workspace/zisel/music-candidates/LICENSES.md`). |
+| **7:47 PM Oct 18** | The 4 **Star batch** trailers (`zisel-star-jazz-brunch`, `-lobby-time`, `-bossa-antigua`, `-silent`; only the crosses removed). Caption: "Updated versions with only the crosses removed, so the Star of David pieces stay in. Same three songs plus a silent one." **Read.** |
 
 ---
 
@@ -156,7 +157,7 @@ Same rev4 design and end card (no website, no labels), 31.0 s, 1080×1920 H.264,
 
 **Editable source:** `trailer/rev4/render_v4_nonreligious.py <out.mp4>` (silent render), then mux the MP3s with ffmpeg: first 31 s, 1.5 s fade out, loudnorm I=-14, AAC 192k, `+faststart`. Contact sheet: `trailer/rev4/zisel-trailer-nonreligious-contact-sheet.jpg`.
 
-### Star batch (made ~7:30 PM Oct 18, **not sent**)
+### Star batch (made ~7:30 PM Oct 18, **sent 7:47 PM**, read)
 Same rev4 style, photo order and end card as the main trailers, 31.0 s, 1080×1920 H.264, faststart. 17 photos instead of 18. **Removed only z080** (a tray of cross pendants). The hamsa pendants (z074sq) and the Star of David photos (z075 Star of David + chai, z076 Star of David pendants) stay in. I checked all 18 photos and z080 is the only one with crosses. The remaining slides fill the gap by each staying up a little longer (1.33 s step instead of 1.25 s), so the ending timing is the same. Glints are round glows, not cross-shaped.
 
 | Version | File | Music |
