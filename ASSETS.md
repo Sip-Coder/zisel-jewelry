@@ -30,6 +30,8 @@ Every editable file should keep a matching PDF beside it (repo rule). This fileâ
 | **~6:28 PM Oct 18** | **No-website** photo business cards (square, story, 3.5Ã—2) + **poster 4** + **cafe-music trailer**. Silent trailer and Kevin-MacLeod music trials **not** in this send. |
 | **6:32 PM Oct 18** | **Silent trailer** (`zisel-trailer-silent.mp4`, same 31 s cut, no audio). No caption. |
 | **~6:36 PM Oct 18** | **Jazz Brunch**, **Lobby Time** and **Bossa Antigua** trailers, followed by a note naming each song (all Kevin MacLeod) and the license: CC BY 4.0, commercial use OK, credit line required when posted publicly (exact text in `/workspace/zisel/music-candidates/LICENSES.md`). |
+| **6:50 PM Oct 18** | 1 non-religious trailer, `zisel-trailer-jazz-brunch-nonreligious.mp4`, sent by SipChief. |
+| **~6:55 PM Oct 18** | The 4 **marketing** trailers (`zisel-marketing-jazz-brunch`, `-lobby-time`, `-bossa-antigua`, `-silent`; non-religious renders), sent by Jonathan himself. Caption: "these are versions without any of the religious symbols just in case". |
 | **7:47 PM Oct 18** | The 4 **Star batch** trailers (`zisel-star-jazz-brunch`, `-lobby-time`, `-bossa-antigua`, `-silent`; only the crosses removed). Caption: "Updated versions with only the crosses removed, so the Star of David pieces stay in. Same three songs plus a silent one." **Read.** |
 
 ---
