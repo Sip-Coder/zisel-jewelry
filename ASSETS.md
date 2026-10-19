@@ -156,7 +156,7 @@ Same rev4 design and end card (no website, no labels), 31.0 s, 1080×1920 H.264,
 
 **Editable source:** `trailer/rev4/render_v4_nonreligious.py <out.mp4>` (silent render), then mux the MP3s with ffmpeg: first 31 s, 1.5 s fade out, loudnorm I=-14, AAC 192k, `+faststart`. Contact sheet: `trailer/rev4/zisel-trailer-nonreligious-contact-sheet.jpg`.
 
-License note sent with the ~6:36 PM batch. Credit line format: "<Title>" Kevin MacLeod (incompetech.com) / Licensed under Creative Commons: By Attribution 4.0 License / http://creativecommons.org/licenses/by/4.0/
+License note sent with the ~6:36 PM batch. Credit line format: "&lt;Title&gt;" Kevin MacLeod (incompetech.com) / Licensed under Creative Commons: By Attribution 4.0 License / http://creativecommons.org/licenses/by/4.0/
 
 Music source MP3s + license notes: `/workspace/zisel/music-candidates/` (`LICENSES.md`). Attribution required for MacLeod tracks.
 
