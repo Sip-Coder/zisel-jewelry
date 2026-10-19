@@ -156,15 +156,15 @@ Same rev4 design and end card (no website, no labels), 31.0 s, 1080×1920 H.264,
 
 **Editable source:** `trailer/rev4/render_v4_nonreligious.py <out.mp4>` (silent render), then mux the MP3s with ffmpeg: first 31 s, 1.5 s fade out, loudnorm I=-14, AAC 192k, `+faststart`. Contact sheet: `trailer/rev4/zisel-trailer-nonreligious-contact-sheet.jpg`.
 
-### No-cross batch (made ~7:30 PM Oct 18, **not sent**)
+### Star batch (made ~7:30 PM Oct 18, **not sent**)
 Same rev4 style, photo order and end card as the main trailers, 31.0 s, 1080×1920 H.264, faststart. 17 photos instead of 18. **Removed only z080** (a tray of cross pendants). The hamsa pendants (z074sq) and the Star of David photos (z075 Star of David + chai, z076 Star of David pendants) stay in. I checked all 18 photos and z080 is the only one with crosses. The remaining slides fill the gap by each staying up a little longer (1.33 s step instead of 1.25 s), so the ending timing is the same. Glints are round glows, not cross-shaped.
 
 | Version | File | Music |
 |---|---|---|
-| Silent | `deliverables/videos/zisel-nocross-silent.mp4` | No audio |
-| Jazz Brunch | `deliverables/videos/zisel-nocross-jazz-brunch.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
-| Lobby Time | `deliverables/videos/zisel-nocross-lobby-time.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
-| Bossa Antigua | `deliverables/videos/zisel-nocross-bossa-antigua.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
+| Silent | `deliverables/videos/zisel-star-silent.mp4` | No audio |
+| Jazz Brunch | `deliverables/videos/zisel-star-jazz-brunch.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
+| Lobby Time | `deliverables/videos/zisel-star-lobby-time.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
+| Bossa Antigua | `deliverables/videos/zisel-star-bossa-antigua.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
 
 **Update ~7:40 PM:** "Wholesale Diamond & Fine Jewelry" is now enlarged to about 86–87% of the frame width in all three places it appears: the intro hook, the tagline under the photos and the end card. Same fonts, colors and layout. The assets are `trailer/rev4/nocross_assets/{hook,tagline,end}_big.png`, built by `gen_big.py`. Close-up: `trailer/rev4/zisel-trailer-nocross-tagline-closeup.png`.
 
