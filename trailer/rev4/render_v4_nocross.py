@@ -6,6 +6,8 @@ W,H,FPS,T=1080,1920,30,31.0
 ld=lambda n:Image.open(A+n+'.png').convert('RGBA')
 bg,card,logo,logosm,hook,end=[ld(n) for n in 'bg card logo logosm hook end'.split()]
 tag=Image.open('tagline.png').convert('RGBA')
+# no-cross: enlarged 'Wholesale Diamond & Fine Jewelry' (~86-87% width) on hook, tagline and end card; see nocross_assets/gen_big.py
+B='nocross_assets/'; hook=Image.open(B+'hook_big.png').convert('RGBA'); end=Image.open(B+'end_big.png').convert('RGBA'); tag=Image.open(B+'tagline_big.png').convert('RGBA')
 WX,WY,WW,WH=78,288,924,1155
 shots=[(n,'') for n in 'z083 z024 z051 z019sq z063 z074sq z037 z010 z068 z013sq z001 z004sq z052 z002 z011 z075 z076'.split()]  # no-cross: z080 removed
 focus={'z083':(.5,.62)}

@@ -166,6 +166,8 @@ Same rev4 style, photo order and end card as the main trailers, 31.0 s, 1080×19
 | Lobby Time | `deliverables/videos/zisel-nocross-lobby-time.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
 | Bossa Antigua | `deliverables/videos/zisel-nocross-bossa-antigua.mp4` | Kevin MacLeod, CC BY 4.0 (credit required) |
 
+**Update ~7:40 PM:** "Wholesale Diamond & Fine Jewelry" is now enlarged to about 86–87% of the frame width in all three places it appears: the intro hook, the tagline under the photos and the end card. Same fonts, colors and layout. The assets are `trailer/rev4/nocross_assets/{hook,tagline,end}_big.png`, built by `gen_big.py`. Close-up: `trailer/rev4/zisel-trailer-nocross-tagline-closeup.png`.
+
 Copies are also in `/workspace/zisel/deliver-1018/`. **Editable source:** `trailer/rev4/render_v4_nocross.py <out.mp4>` (silent render), then mux the MP3s with ffmpeg: first 31 s, 1.5 s fade out, loudnorm I=-14, AAC 192k, `+faststart`. Contact sheet: `trailer/rev4/zisel-trailer-nocross-contact-sheet.png`.
 
 License note sent with the ~6:36 PM batch. Credit line format: "&lt;Title&gt;" Kevin MacLeod (incompetech.com) / Licensed under Creative Commons: By Attribution 4.0 License / http://creativecommons.org/licenses/by/4.0/
