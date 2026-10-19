@@ -10,11 +10,15 @@ JS=f'<script>document.fonts.ready.then(()=>{{for(const e of document.querySelect
 OLD='WHOLESALE DIAMOND<br>&amp; FINE JEWELRY</div>'
 NEW='<span class="ln">WHOLESALE DIAMOND</span><br><span class="ln">&amp; FINE JEWELRY</span></div>'
 out={}
-for k in ['hook','end']:
+for k in ['end']:
     css,body=A[k]; body=body.replace('style="font-weight:600',' class="fit" style="line-height:1.25;margin-right:-.2em;font-weight:600',1).replace(OLD,NEW)
     assert 'class="fit"' in body; out[k]=(css,body)
+# hook: caps line is a secondary line, cap height ~65% of the Brilliance caps (owner feedback 7:42 PM)
+css,body=A['hook']; out['hook']=(css,body.replace('font-size:30px;letter-spacing:.2em;margin-top:34px','font-size:HOOKFSpx;letter-spacing:.2em;margin-right:-.2em;line-height:1.3;margin-top:44px'))
 out['tagline']=('',f'<div style="{center};top:1500px"><div style="width:120px;height:2px;background:var(--gold)"></div><div class="fit" style="font-family:ZPlay;font-style:italic;font-size:30px;color:#dfe6f5;margin-top:14px"><span class="ln">Wholesale Diamond &amp; Fine Jewelry</span></div></div>')
+HOOKFS=sys.argv[1] if len(sys.argv)>1 else '47'
 for k,(css,body) in out.items():
+    body=body.replace('HOOKFS',HOOKFS)
     open(k+'_big.html','w').write(H%(css,body+JS))
     subprocess.run(['google-chrome','--headless','--no-sandbox','--disable-gpu','--hide-scrollbars','--force-device-scale-factor=1','--default-background-color=00000000','--virtual-time-budget=3000','--window-size=1080,1920',f'--screenshot={k}_big.png',f'{k}_big.html'],capture_output=True)
 print('ok')
