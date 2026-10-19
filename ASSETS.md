@@ -302,3 +302,7 @@ Useful crops: `z004sq.jpg` (hearts, zoomed out), `z013sq.jpg`, `z019sq.jpg`, `z0
 | Trailer scripts and renders | `trailer/rev3/`, `trailer/rev4/` |
 
 Not in the public repo (private): invoices, time logs, Shulkin's messages/transcripts, voice notes.
+
+## Private repo
+
+Invoice, time log and client communications are kept in the private repo **Sip-Coder/zisel-jewelry-private** (access restricted).
