@@ -1,6 +1,6 @@
 # Zisel Jewelry · Master Asset Inventory
 
-**Last updated:** Sunday Oct 18, 2026, ~6:40 PM America/Los_Angeles (PDT)  
+**Last updated:** Monday Oct 19, 2026, ~8:05 PM America/Los_Angeles (PDT) (print business cards added)  
 **Repo / project home:** `/workspace/zisel-jewelry/`  
 **Working scratch / send packs:** `/workspace/zisel/`  
 **Do not commit** this inventory update until Jonathan asks.
@@ -11,7 +11,7 @@ Every editable file should keep a matching PDF beside it (repo rule). This file�
 
 ## Rules (client deliverables)
 
-1. **No “Las Vegas”** on any client-facing asset (posters, invite, site, emails, cards, trailers).
+1. **No “Las Vegas”** on any client-facing asset (posters, invite, site, emails, cards, trailers). **Exception (Jonathan, Oct 19):** the print business cards carry the location line **“Las Vegas, Nevada”** (written out, no “NV”, no street address).
 2. **No website URL** on client assets sent to Shulkin (removed from photo business cards Oct 18 ~6:21 PM; posters / invite / trailers never had it).
 3. **No category labels** on the trailer (RINGS / BRACELETS / etc. were dropped for the rev4 cut).
 4. **Proper file extensions** on every deliverable (`.png`, `.jpg`, `.pdf`, `.mp4`, etc.).
@@ -119,6 +119,24 @@ Four tiles: **z083** pendants, **z024** ring tray, **z051** tennis bracelets (po
 | Story | `brand/card_business_gold-frame_story_1080x1920.png` · `.pdf` | `invite/print/business-card-story.html` |
 
 **Sent:** Not in today’s Shulkin packs (photo cards preferred). Still valid brand assets.
+
+### Print business cards, 3.5×2 in two-sided (NEW Oct 19 ~8:00 PM): 3 concepts, not yet chosen or sent
+Front: logo only. Back: Jonathan Shulkin / Zisel Jewelry / Wholesale Diamond & Fine Jewelry / 725.254.6937 / Las Vegas, Nevada. No website, email, street address or title.
+
+| Concept | Front | Back |
+|---|---|---|
+| **A · Gold Frame Classic** | Navy + logo + gold hairline frame | White, centered navy/gold type, hairline |
+| **B · Midnight** | Navy + logo, no frame | Navy, left-aligned gold name and phone |
+| **C · Ivory & Midnight** | White + navy logo, gold JEWELRY | Navy, centered white/gold type, gold hairline |
+
+| | |
+|---|---|
+| **Folder** | `/workspace/zisel-jewelry/deliverables/business-cards/` (README.md + README.pdf) |
+| **Print PDFs** | `zisel-business-card-{A,B,C}_print-bleed_CMYK.pdf` (3.75×2.25 in, 0.125 in bleed, no marks) · `…_print-crop-marks_CMYK.pdf` (with crop marks). 2 pages each: front, back. Vector, fonts embedded, DeviceCMYK (Ghostscript default profile), TrimBox/BleedBox set. RGB masters in `rgb/`. |
+| **Previews** | `zisel-business-card-{A,B,C}_preview.png` (front + back at trim) · comparison `zisel-business-card-concepts.png` (copy: `/workspace/zisel/business-card-concepts.png`) |
+| **Editable** | `src/concepts.py` (text/colors/layout) · `src/card.css` · generated `src/concept-*.html` · fonts in `src/fonts/` |
+| **Re-render** | `cd deliverables/business-cards/src && python3 build.py` (Chrome → PDF, pypdf boxes, Ghostscript CMYK, pdftoppm previews). README PDF: `python3 md2pdf.py ../README.md` |
+| **Print notes** | Gold is flat ink (#c99a3a on navy, #a7802d on white); for metallic ask the printer for gold foil. Get a soft proof for the heavy navy. |
 
 ### Invite card (square cover)
 | | |
