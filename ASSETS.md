@@ -1,11 +1,24 @@
 # Zisel Jewelry · Master Asset Inventory
 
-**Last updated:** Monday Oct 19, 2026, ~8:30 PM America/Los_Angeles (PDT) (print business cards rev 2)  
+**Last updated:** Monday Oct 19, 2026, ~9:30 PM America/Los_Angeles (PDT) (client favorites recorded)  
 **Repo / project home:** `/workspace/zisel-jewelry/`  
 **Working scratch / send packs:** `/workspace/zisel/`  
 **Do not commit** this inventory update until Jonathan asks.
 
 Every editable file should keep a matching PDF beside it (repo rule). This file’s PDF twin is `ASSETS.pdf`.
+
+---
+
+## Client favorites (final picks, Oct 19)
+
+Shulkin sent these two back to Jonathan on WhatsApp on **Mon Oct 19, ~6:38 PM PDT** as his favorites — **the versions he is sticking with**. Every other version stays in place.
+
+| Pick | Matched source file | Confidence / evidence |
+|---|---|---|
+| **Poster** — "Book a Private Showing", 3×2 grid | **Poster 1:** `/workspace/zisel-jewelry/invite/zisel-invite-poster.png` · `.jpg` · `.pdf` (editable `invite/print/poster.html`) | Very high: SSIM 0.999, pHash distance 0 vs the JPG; posters 2/3/4 ≤ 0.72 |
+| **Video** — 31 s trailer | **Star batch, Jazz Brunch:** `/workspace/zisel-jewelry/deliverables/videos/zisel-star-jazz-brunch.mp4` (same file: `/workspace/zisel/deliver-1018/zisel-star-jazz-brunch.mp4`) | Very high: audio cross-correlation 0.985 with Jazz Brunch (other songs ≤ 0.04); video SSIM 0.86 vs 0.73–0.74 for the marketing/original Jazz Brunch cuts; Star of David shown, no cross |
+
+WhatsApp copies + match notes: `zisel-jewelry-private/client-comms/favorites-1019/` (private repo).
 
 ---
 
