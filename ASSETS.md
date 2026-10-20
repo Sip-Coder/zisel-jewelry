@@ -154,6 +154,7 @@ Rev 2 changes from Jonathan: **navy on both sides**, **metallic gold shimmer** o
 ### Packaging mockups (NEW Oct 20 ~4:45 PM): sample images, styled on business card A FRONT
 - **Gift bag:** `deliverables/packaging/zisel-gift-bag-mockup.png` · `.pdf`: navy paper bag with gold rope handles; card-A front treatment on the face (metallic gold edge band, hairline + inner frame, exact Zisel logo).
 - **Jewelry pouch:** `deliverables/packaging/zisel-jewelry-pouch-mockup.png` · `.pdf`: navy suede drawstring pouch with the gold frame and logo as foil print.
+- **Store counter scene:** `deliverables/packaging/zisel-counter-bag-and-box-mockup.png` · `.pdf`: the navy Zisel bag next to a matching navy jewelry box on a marble boutique counter in warm light. The box has a gold-framed lid top and a lid front with a frame and the exact logo. The AI base photo's royal blue was regraded to brand navy. Re-render: `cd /tmp && python3 /workspace/zisel-jewelry/deliverables/packaging/src/make_counter_mockup.py`.
 - **How it was made:** the base photos are AI-generated with no text (`src/base_*_blank.jpg`). The real vector face artwork (`src/art_*-face.pdf`, built from the card code) is composited on in perspective, so the lettering is never AI-drawn. Re-render: `cd /tmp && python3 /workspace/zisel-jewelry/deliverables/packaging/src/make_mockups.py`. No URL, email or tagline (the card front carries only the logo).
 
 ### Invite card (square cover)
