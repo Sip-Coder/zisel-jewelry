@@ -138,7 +138,7 @@ Rev 2 changes from Jonathan: **navy on both sides**, **metallic gold shimmer** o
 
 | Concept | Front | Back |
 |---|---|---|
-| **A · Gold Frame Classic** | Logo; band + hairline + second fine inner frame | Centered: white name, gold phone, plain gold divider, same double frame |
+| **A · Gold Frame Classic** (back rev 3, Oct 19 ~9:35 PM) | Logo; band + hairline + second fine inner frame | Centered: Jonathan Shulkin / Wholesale Diamond & Fine Jewelry / **BOOK A PRIVATE SHOWING** (gold tracked caps) / gold rule / 725.254.6937 / Las Vegas, Nevada. ZISEL JEWELRY removed; block centered in frame. A-only preview: `/workspace/zisel/business-card-A-rev3.png` |
 | **B · Midnight** | Logo; band + hairline | Left-aligned: gold name and phone, diamond accent at right |
 | **C · Diamond Divider** | Larger logo; band + hairline, no inner frame | Centered: gold name, rule–diamond–rule divider, white phone |
 

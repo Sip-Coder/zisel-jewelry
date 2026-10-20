@@ -126,7 +126,17 @@ def frame(c, ox, oy, inner_frame):
     return e + HAIR_GAP + HAIR_W + (3.6 if inner_frame else 0)   # inner edge of last frame line
 
 # ---------- back ----------
-SPEC = {"name": ("play", 13.5, 0, 0), "biz": ("sans6", 6.5, .42, 12), "tag": ("ital", 8, 0, 11), "phone": ("sans6", 10, .12, 23.5), "loc": ("sans5", 7, .1, 11)}
+SPEC = {"name": ("play", 13.5, 0, 0), "biz": ("sans6", 6.5, .42, 12), "tag": ("ital", 8, 0, 11), "phone": ("sans6", 10, .12, 23.5), "loc": ("sans5", 7, .1, 11), "slogan": ("sans6", 6.3, .3, 11)}
+TEXT = lambda k: {"name": NAME, "biz": BIZ, "tag": TAG, "phone": PHONE, "loc": LOC, "slogan": SLOGAN}[k]
+
+def ink_v(k):
+    """vertical ink extent (ymin, ymax) of a back line relative to its baseline, in pt."""
+    from fontTools.pens.boundsPen import BoundsPen
+    f, size, tr, _ = SPEC[k]; ft, _ = font(f); gs = ft.getGlyphSet(); lo, hi = 0, 0
+    for name, _ in shape(TEXT(k), f, size, tr)[0]:
+        bp = BoundsPen(gs); gs[name].draw(bp)
+        if bp.bounds: lo, hi = min(lo, bp.bounds[1]), max(hi, bp.bounds[3])
+    s = size / ft["head"].unitsPerEm; return lo * s, hi * s
 
 def back(c, ox, oy, cfg):
     left = cfg["align"] == "left"; safe_l = ox + 44 if left else None
@@ -134,9 +144,14 @@ def back(c, ox, oy, cfg):
     first = SPEC["name"][1] * .72; last = SPEC["loc"][1] * .22
     total = first + sum(SPEC[k][3] for k, _ in lines) + last
     y = oy + H / 2 + total / 2 - first; cx = ox + W / 2
+    advs = {k: cfg.get("adv", {}).get(k, SPEC[k][3]) for k, _ in lines}
+    if cfg.get("center_ink"):   # exact optical centering of the ink block on the card (= inside the symmetric frame)
+        drop = sum(advs[k] for k, _ in lines[1:])
+        top = ink_v(lines[0][0])[1]; bot = -drop + ink_v(lines[-1][0])[0]
+        y = oy + H / 2 - (top + bot) / 2 + advs[lines[0][0]]
     rule_style = dict(cfg["back"])["rule"]
     for k, style in lines:
-        f, size, tr, adv = SPEC[k]; y -= adv
+        f, size, tr, _ = SPEC[k]; adv = advs[k]; y -= adv
         if k == "phone":   # divider sits between tagline and phone
             ry = y + adv - 11.2
             if cfg.get("gem_divider"):
@@ -146,10 +161,8 @@ def back(c, ox, oy, cfg):
             else:
                 rw = 36 if left else 48; rx = safe_l if left else cx - rw / 2
                 p = c.beginPath(); p.rect(rx, ry - .35, rw, .7); paint(c, p, rule_style, (rx, ry - 1, rx + rw, ry + 1))
-        if left: p, bb = text_path(c, {"name": NAME, "biz": BIZ, "tag": TAG, "phone": PHONE, "loc": LOC}[k], f, size, safe_l, y, tr)
-        else:
-            txt = {"name": NAME, "biz": BIZ, "tag": TAG, "phone": PHONE, "loc": LOC}[k]
-            p, bb = text_path(c, txt, f, size, cx, y, tr, anchor="center")
+        if left: p, bb = text_path(c, TEXT(k), f, size, safe_l, y, tr)
+        else: p, bb = text_path(c, TEXT(k), f, size, cx, y, tr, anchor="center")
         paint(c, p, style, bb)
     if cfg.get("gem_accent"): gem(c, ox + W - 58, oy + H / 2 + 7, 16)
 
