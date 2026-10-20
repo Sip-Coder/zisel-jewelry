@@ -1,10 +1,10 @@
 # Zisel Jewelry · Print business cards (3 concepts), rev 3
 
-**Revised:** Monday Oct 19, 2026, ~8:30 PM PDT (rev 2: navy on both sides, metallic gold shimmer, gold border band like the poster). **Rev 3, ~9:35 PM PDT:** concept A back only (see below); B and C unchanged. For Jonathan Shulkin (owner). **Status:** concepts for Jonathan Yu to choose from, not sent.
+**Revised:** Monday Oct 19, 2026, ~8:30 PM PDT (rev 2: navy on both sides, metallic gold shimmer, gold border band like the poster). **Rev 3, ~9:45 PM PDT:** concept A back only (see below); A front, B and C unchanged. For Jonathan Shulkin (owner). **Status:** concepts for Jonathan Yu to choose from, not sent.
 
 **Front:** Zisel logo only. It's built the same way as the approved logo: Playfair "Zısel", the white diamond with metallic-gold edges, and metallic-gold "JEWELRY".
 **Back (B, C):** Jonathan Shulkin / ZISEL JEWELRY / Wholesale Diamond & Fine Jewelry / 725.254.6937 / Las Vegas, Nevada.
-**Back (A, rev 3):** Jonathan Shulkin / Wholesale Diamond & Fine Jewelry / BOOK A PRIVATE SHOWING / gold rule / 725.254.6937 / Las Vegas, Nevada.
+**Back (A, rev 3):** Jonathan Shulkin / WHOLESALE DIAMOND & FINE JEWELRY / Book a Private Showing / gold rule / 725.254.6937 / Las Vegas, Nevada / Viewing by appointment only.
 **Not on the card:** website, email, street address, job title.
 
 **All concepts, both sides:** navy panel, plus a wide metallic-gold band along the card edge (0.14 in visible inside trim, running out through the full 0.125 in bleed) with a thin gold hairline inset 5 pt inside it. This follows the invite poster.
@@ -13,7 +13,7 @@
 
 | | Front | Back |
 |---|---|---|
-| **A · Gold Frame Classic** | Logo centered; band + hairline + a second fine inner frame (double rule) | **Rev 3:** centered: white name, italic tagline, **BOOK A PRIVATE SHOWING** (6.3 pt Montserrat SemiBold caps, tracked, gold shimmer; the headline of the client's favourite poster), plain gold divider, gold phone. ZISEL JEWELRY removed (it repeats the front logo). The block is optically centered inside the frame (17.0 / 17.1 pt above/below). Same double frame. |
+| **A · Gold Frame Classic** | Logo centered; band + hairline + a second fine inner frame (double rule) | **Rev 3 (final brief, ~9:45 PM):** type and colours matched to the trailer end card (`trailer/src/end.html`). Centered: white name (Playfair 12.5 pt, was 13.5) / **WHOLESALE DIAMOND & FINE JEWELRY** ivory Montserrat SemiBold caps 6 pt, 0.2 em tracking / **Book a Private Showing** Playfair 10.5 pt, soft champagne/rose-gold shimmer, one line / gold rule / gold phone 10 pt / Las Vegas, Nevada 7 pt / *Viewing by appointment only* ivory Playfair Italic 6.5 pt. ZISEL JEWELRY removed. Block centered inside the inner frame: 15.4 / 15.5 pt above/below, 24.5 pt each side. Same double frame. |
 | **B · Midnight** | Logo centered (slightly larger); band + hairline | Left-aligned: gold name and phone, white ZISEL JEWELRY, short gold divider, small diamond accent at right |
 | **C · Diamond Divider** | Largest logo; band + hairline, no inner frame | Centered: gold name, white ZISEL JEWELRY, gold rule–diamond–rule divider, white phone |
 
@@ -39,9 +39,11 @@ Preview: ![concepts](zisel-business-card-concepts.png)
 - **Placement (checked at 600 dpi):** all text and logos sit ≥ 25 pt inside the safe line and ≥ 17 pt clear of the inner frame line. The gold band is 10 pt visible inside trim, so a slightly off-center cut stays even.
 - **Vector:** 100% vector, with no raster images. **Text is outlined** (HarfBuzz-shaped with kerning, then converted to paths), so the PDFs contain no fonts at all.
 - **Gold shimmer:** this is the brand metallic gradient from `invite/zisel.css` (`#7a5a14 → #c99a3a → #fff1b8 → #d8b35a → #8f6b1e → #e8c870 → #fff5cc → #a97d25`). It's written as native PDF axial shadings in DeviceCMYK, so it prints as a smooth gradient. At 600 dpi the largest step between neighbouring pixels in the band is 2/255, with no banding. The diamond edges use the gem.svg gradient (`#7a5a14 → #fff1b8 → #b8892c → #f3dc8f`).
-- **Type sizes:** name 13.5 pt Playfair, tagline 8 pt Playfair Italic, "ZISEL JEWELRY" (B, C) 6.5 pt Montserrat SemiBold tracked, slogan (A) 6.3 pt Montserrat SemiBold tracked caps, **phone 10 pt** Montserrat SemiBold, location 7 pt Montserrat Medium, logo "JEWELRY" ≈ 8–9 pt.
+- **Type sizes:** name 13.5 pt Playfair, tagline 8 pt Playfair Italic, "ZISEL JEWELRY" (B, C) 6.5 pt Montserrat SemiBold tracked; A back: WHOLESALE caps 6 pt, "Book a Private Showing" 10.5 pt, "Viewing by appointment only" 6.5 pt italic, name 12.5 pt; **phone 10 pt** Montserrat SemiBold, location 7 pt Montserrat Medium, logo "JEWELRY" ≈ 8–9 pt.
 - **Color:**
   - Gold and light inks were converted sRGB → CMYK with Ghostscript's "Artifex CMYK SWOP" profile, not the printer's own profile.
   - Navy is hand-set to **C100 M70 Y5 K80**. The straight profile conversion of #0d1f45 gave a muddy C89 M78 Y48 K73 at 288% ink.
   - Ask the printer for a hard or soft proof, especially for the navy.
 - **Foil option:** if the printer offers it, the gold areas can be sent for **gold foil** (band, hairlines, gold type, dividers, diamond edges). Real foil looks metallic, which a CMYK gradient can only imitate. Ask the printer how they want the foil separation (usually a 100% K spot layer named "Foil" matching the gold shapes); we can produce that from `build.py`.
+
+- **Champagne shimmer** (A, "Book a Private Showing"): `#b98d5c → #e6c39a → #fbecd2 → #dcb48a → #f3dcbc → #c49a6c`, a softer, warmer cut of the brand gold. The end card source uses the standard brand gold; the rose tint in the photo reference comes partly from the camera. Ivory for the white lines: `#f8f2e4`.

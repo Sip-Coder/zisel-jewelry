@@ -14,6 +14,7 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfgen.canvas import FILL_EVEN_ODD as EO, FILL_NON_ZERO as NZ
 from reportlab.lib.colors import CMYKColor, Color
 from concepts import *
+GRADIENTS = {"gold": GOLD, "champagne": CHAMPAGNE}
 
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.dirname(HERE)
 W, H, B, SLUG = 270.0, 162.0, 9.0, 18.0
@@ -66,11 +67,11 @@ def text_path(c, text, k, size, x, y, track=0.0, anchor="left"):
 
 def paint(c, path, style, bbox, even_odd=False):
     """fill `path` with a flat ink or the metallic gold gradient mapped like CSS .goldtext (200% box, 135deg)."""
-    if style != "gold":
+    if style not in GRADIENTS:
         c.setFillColor(ink(style)); c.drawPath(path, stroke=0, fill=1, fillMode=EO if even_odd else NZ); return
     x0, y0, x1, y1 = bbox; w, h = x1 - x0, y1 - y0
     c.saveState(); c.clipPath(path, stroke=0, fill=0, fillMode=EO if even_odd else NZ)
-    gradient(c, x0, y1, x0 + 2 * w, y1 - 2 * max(h, w * .12), GOLD); c.restoreState()
+    gradient(c, x0, y1, x0 + 2 * w, y1 - 2 * max(h, w * .12), GRADIENTS[style]); c.restoreState()
 
 def gradient(c, xa, ya, xb, yb, stops):
     c.linearGradient(xa, ya, xb, yb, [ink(h) for _, h in stops], [p for p, _ in stops], extend=True)
@@ -126,13 +127,14 @@ def frame(c, ox, oy, inner_frame):
     return e + HAIR_GAP + HAIR_W + (3.6 if inner_frame else 0)   # inner edge of last frame line
 
 # ---------- back ----------
-SPEC = {"name": ("play", 13.5, 0, 0), "biz": ("sans6", 6.5, .42, 12), "tag": ("ital", 8, 0, 11), "phone": ("sans6", 10, .12, 23.5), "loc": ("sans5", 7, .1, 11), "slogan": ("sans6", 6.3, .3, 11)}
-TEXT = lambda k: {"name": NAME, "biz": BIZ, "tag": TAG, "phone": PHONE, "loc": LOC, "slogan": SLOGAN}[k]
+SPEC = {"name": ("play", 13.5, 0, 0), "biz": ("sans6", 6.5, .42, 12), "tag": ("ital", 8, 0, 11), "phone": ("sans6", 10, .12, 23.5), "loc": ("sans5", 7, .1, 11), "slogan": ("sans6", 6.3, .3, 11),
+        "whole": ("sans6", 6, .2, 11), "book": ("play4", 10.5, 0, 12.5), "view": ("ital", 6.5, 0, 9.5)}
+TEXT = lambda k: {"name": NAME, "biz": BIZ, "tag": TAG, "phone": PHONE, "loc": LOC, "slogan": SLOGAN, "whole": WHOLE, "book": BOOK, "view": VIEW}[k]
 
-def ink_v(k):
+def ink_v(k, size=None):
     """vertical ink extent (ymin, ymax) of a back line relative to its baseline, in pt."""
     from fontTools.pens.boundsPen import BoundsPen
-    f, size, tr, _ = SPEC[k]; ft, _ = font(f); gs = ft.getGlyphSet(); lo, hi = 0, 0
+    f, s0, tr, _ = SPEC[k]; size = size or s0; ft, _ = font(f); gs = ft.getGlyphSet(); lo, hi = 0, 0
     for name, _ in shape(TEXT(k), f, size, tr)[0]:
         bp = BoundsPen(gs); gs[name].draw(bp)
         if bp.bounds: lo, hi = min(lo, bp.bounds[1]), max(hi, bp.bounds[3])
@@ -147,13 +149,13 @@ def back(c, ox, oy, cfg):
     advs = {k: cfg.get("adv", {}).get(k, SPEC[k][3]) for k, _ in lines}
     if cfg.get("center_ink"):   # exact optical centering of the ink block on the card (= inside the symmetric frame)
         drop = sum(advs[k] for k, _ in lines[1:])
-        top = ink_v(lines[0][0])[1]; bot = -drop + ink_v(lines[-1][0])[0]
+        sz = cfg.get("size", {}); top = ink_v(lines[0][0], sz.get(lines[0][0]))[1]; bot = -drop + ink_v(lines[-1][0], sz.get(lines[-1][0]))[0]
         y = oy + H / 2 - (top + bot) / 2 + advs[lines[0][0]]
     rule_style = dict(cfg["back"])["rule"]
     for k, style in lines:
-        f, size, tr, _ = SPEC[k]; adv = advs[k]; y -= adv
+        f, size, tr, _ = SPEC[k]; size = cfg.get("size", {}).get(k, size); adv = advs[k]; y -= adv
         if k == "phone":   # divider sits between tagline and phone
-            ry = y + adv - 11.2
+            ry = y + adv - cfg.get("rule_drop", 11.2)
             if cfg.get("gem_divider"):
                 gw = 9; gem(c, cx, ry + gw * .4, gw)
                 for sx in (-1, 1):
