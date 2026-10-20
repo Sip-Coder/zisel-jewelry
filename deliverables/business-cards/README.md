@@ -1,10 +1,10 @@
 # Zisel Jewelry · Print business cards (3 concepts), rev 3
 
-**Revised:** Monday Oct 19, 2026, ~8:30 PM PDT (rev 2: navy on both sides, metallic gold shimmer, gold border band like the poster). **Rev 3, ~9:45 PM PDT:** concept A back only (see below); A front, B and C unchanged. For Jonathan Shulkin (owner). **Status:** concepts for Jonathan Yu to choose from, not sent.
+**Revised:** Monday Oct 19, 2026, ~8:30 PM PDT (rev 2: navy on both sides, metallic gold shimmer, gold border band like the poster). **Rev 3 / 3b, ~9:45 PM PDT:** concept A back only (see below); A front, B and C unchanged. For Jonathan Shulkin (owner). **Status:** concepts for Jonathan Yu to choose from, not sent.
 
 **Front:** Zisel logo only. It's built the same way as the approved logo: Playfair "Zısel", the white diamond with metallic-gold edges, and metallic-gold "JEWELRY".
 **Back (B, C):** Jonathan Shulkin / ZISEL JEWELRY / Wholesale Diamond & Fine Jewelry / 725.254.6937 / Las Vegas, Nevada.
-**Back (A, rev 3):** Jonathan Shulkin / WHOLESALE DIAMOND & FINE JEWELRY / Book a Private Showing / gold rule / 725.254.6937 / Las Vegas, Nevada / Viewing by appointment only.
+**Back (A, rev 3b):** Jonathan Shulkin / Book a Private Showing / WHOLESALE DIAMOND & FINE JEWELRY / gold rule / 725.254.6937 / Las Vegas, Nevada / Viewing by appointment only.
 **Not on the card:** website, email, street address, job title.
 
 **All concepts, both sides:** navy panel, plus a wide metallic-gold band along the card edge (0.14 in visible inside trim, running out through the full 0.125 in bleed) with a thin gold hairline inset 5 pt inside it. This follows the invite poster.
@@ -13,7 +13,7 @@
 
 | | Front | Back |
 |---|---|---|
-| **A · Gold Frame Classic** | Logo centered; band + hairline + a second fine inner frame (double rule) | **Rev 3 (final brief, ~9:45 PM):** type and colours matched to the trailer end card (`trailer/src/end.html`). Centered: white name (Playfair 12.5 pt, was 13.5) / **WHOLESALE DIAMOND & FINE JEWELRY** ivory Montserrat SemiBold caps 6 pt, 0.2 em tracking / **Book a Private Showing** Playfair 10.5 pt, soft champagne/rose-gold shimmer, one line / gold rule / gold phone 10 pt / Las Vegas, Nevada 7 pt / *Viewing by appointment only* ivory Playfair Italic 6.5 pt. ZISEL JEWELRY removed. Block centered inside the inner frame: 15.4 / 15.5 pt above/below, 24.5 pt each side. Same double frame. |
+| **A · Gold Frame Classic** | Logo centered; band + hairline + a second fine inner frame (double rule) | **Rev 3b (~9:45 PM):** type and colours matched to the trailer end card (`trailer/src/end.html`). Centered: white name (Playfair 12.5 pt) / **Book a Private Showing** Playfair 10.5 pt, soft champagne/rose-gold shimmer / **WHOLESALE DIAMOND & FINE JEWELRY** ivory Montserrat SemiBold caps 6 pt, 0.2 em tracking / gold rule / gold phone 10 pt / Las Vegas, Nevada 7 pt / *Viewing by appointment only* ivory Playfair Italic 6.5 pt. Rev 3b swapped the slogan above the WHOLESALE line (styles unchanged). ZISEL JEWELRY removed. Block centered inside the inner frame: 14.8 / 14.9 pt above/below, 24.5 pt each side; 3.4–5.5 pt of space between lines, with the rule centered between WHOLESALE and the phone. Same double frame. |
 | **B · Midnight** | Logo centered (slightly larger); band + hairline | Left-aligned: gold name and phone, white ZISEL JEWELRY, short gold divider, small diamond accent at right |
 | **C · Diamond Divider** | Largest logo; band + hairline, no inner frame | Centered: gold name, white ZISEL JEWELRY, gold rule–diamond–rule divider, white phone |
 

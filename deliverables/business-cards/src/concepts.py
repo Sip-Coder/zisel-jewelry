@@ -23,12 +23,13 @@ HAIR_W = 0.6          # hairline weight (pt)
 # style: "gold" = metallic gradient; any hex = flat ink
 CONCEPTS = {
  "A": dict(title="A · Gold Frame Classic",
-           desc="Gold band + hairline on both sides, plus a second fine inner frame (double-rule classic). Centered back (rev 3): white name, ivory WHOLESALE caps, champagne-shimmer “Book a Private Showing”, gold divider, gold phone, location, ivory italic “Viewing by appointment only”.",
+           desc="Gold band + hairline on both sides, plus a second fine inner frame (double-rule classic). Centered back (rev 3): white name, champagne-shimmer “Book a Private Showing”, ivory WHOLESALE caps, gold divider, gold phone, location, ivory italic “Viewing by appointment only”.",
            inner_frame=True, logo_size=40, align="center", center_ink=True,
            # rev 3 (Oct 19, Jonathan): ZISEL JEWELRY removed; type and colours matched to the trailer end card
-           size={"name": 12.5}, rule_drop=7.8,
-           adv={"whole": 11, "book": 13.5, "phone": 19.5, "loc": 9.5, "view": 10},
-           back=[("name", WHITE), ("whole", IVORY), ("book", "champagne"), ("rule", "gold"), ("phone", "gold"), ("loc", MUTED), ("view", IVORY)]),
+           # rev 3b (Oct 19 ~9:40 PM): "Book a Private Showing" moved above the WHOLESALE line
+           size={"name": 12.5}, rule_drop=6.0,
+           adv={"book": 15.1, "whole": 11.1, "phone": 19, "loc": 9.5, "view": 10},
+           back=[("name", WHITE), ("book", "champagne"), ("whole", IVORY), ("rule", "gold"), ("phone", "gold"), ("loc", MUTED), ("view", IVORY)]),
  "B": dict(title="B · Midnight",
            desc="Gold band + hairline on both sides. Left-aligned back: gold name and phone, white ZISEL JEWELRY, short gold divider, small diamond accent at the right.",
            inner_frame=False, logo_size=44, align="left", gem_accent=True,
