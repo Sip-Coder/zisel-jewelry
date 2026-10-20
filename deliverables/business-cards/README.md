@@ -47,3 +47,7 @@ Preview: ![concepts](zisel-business-card-concepts.png)
 - **Foil option:** if the printer offers it, the gold areas can be sent for **gold foil** (band, hairlines, gold type, dividers, diamond edges). Real foil looks metallic, which a CMYK gradient can only imitate. Ask the printer how they want the foil separation (usually a 100% K spot layer named "Foil" matching the gold shapes); we can produce that from `build.py`.
 
 - **Champagne shimmer** (A, "Book a Private Showing"): `#b98d5c → #e6c39a → #fbecd2 → #dcb48a → #f3dcbc → #c49a6c`, a softer, warmer cut of the brand gold. The end card source uses the standard brand gold; the rose tint in the photo reference comes partly from the camera. Ivory for the white lines: `#f8f2e4`.
+
+## Vistaprint upload file (card A)
+
+Added Tuesday Oct 20, 2026, ~7:55 AM PDT. `vistaprint/zisel-business-card-A_vistaprint_3.61x2.11_CMYK.pdf` is card A rev 3b cut down to Vistaprint's upload size: **3.61 × 2.11 in** with bleed (trim 3.5 × 2 in, bleed ≈ 0.055 in per side), read from the Specs & Templates panel on the [Soft Touch Business Cards](https://www.vistaprint.com/business-cards/soft-touch) page. Same vector artwork and CMYK inks (navy stays C100 M70 Y5 K80); only the outer 0.07 in of bleed is trimmed, so the gold band still runs off every edge. Page 1 front, page 2 back. Preview: `vistaprint/zisel-business-card-A_vistaprint_preview.png`. If card A changes, rebuild the main PDF first, then re-crop it (inset 5.04 pt per side). Check the spec panel again if you order a different Vistaprint card.
