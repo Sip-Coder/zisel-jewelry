@@ -1,6 +1,6 @@
 # Zisel Jewelry · Master Asset Inventory
 
-**Last updated:** Monday Oct 19, 2026, ~8:05 PM America/Los_Angeles (PDT) (print business cards added)  
+**Last updated:** Monday Oct 19, 2026, ~8:30 PM America/Los_Angeles (PDT) (print business cards rev 2)  
 **Repo / project home:** `/workspace/zisel-jewelry/`  
 **Working scratch / send packs:** `/workspace/zisel/`  
 **Do not commit** this inventory update until Jonathan asks.
@@ -120,23 +120,23 @@ Four tiles: **z083** pendants, **z024** ring tray, **z051** tennis bracelets (po
 
 **Sent:** Not in today’s Shulkin packs (photo cards preferred). Still valid brand assets.
 
-### Print business cards, 3.5×2 in two-sided (NEW Oct 19 ~8:00 PM): 3 concepts, not yet chosen or sent
-Front: logo only. Back: Jonathan Shulkin / Zisel Jewelry / Wholesale Diamond & Fine Jewelry / 725.254.6937 / Las Vegas, Nevada. No website, email, street address or title.
+### Print business cards, 3.5×2 in two-sided, rev 2 (Oct 19 ~8:30 PM): 3 concepts, not yet chosen or sent
+Rev 2 changes from Jonathan: **navy on both sides**, **metallic gold shimmer** on all gold type, dividers and diamond edges (brand gradient from `invite/zisel.css`), and a **wide gold border band** like the poster (0.14 in inside trim, running through the full bleed) with a thin hairline inset. Front: logo only. Back: Jonathan Shulkin / ZISEL JEWELRY / Wholesale Diamond & Fine Jewelry / 725.254.6937 / Las Vegas, Nevada. No website, email, street address or title.
 
 | Concept | Front | Back |
 |---|---|---|
-| **A · Gold Frame Classic** | Navy + logo + gold hairline frame | White, centered navy/gold type, hairline |
-| **B · Midnight** | Navy + logo, no frame | Navy, left-aligned gold name and phone |
-| **C · Ivory & Midnight** | White + navy logo, gold JEWELRY | Navy, centered white/gold type, gold hairline |
+| **A · Gold Frame Classic** | Logo; band + hairline + second fine inner frame | Centered: white name, gold phone, plain gold divider, same double frame |
+| **B · Midnight** | Logo; band + hairline | Left-aligned: gold name and phone, diamond accent at right |
+| **C · Diamond Divider** | Larger logo; band + hairline, no inner frame | Centered: gold name, rule–diamond–rule divider, white phone |
 
 | | |
 |---|---|
 | **Folder** | `/workspace/zisel-jewelry/deliverables/business-cards/` (README.md + README.pdf) |
-| **Print PDFs** | `zisel-business-card-{A,B,C}_print-bleed_CMYK.pdf` (3.75×2.25 in, 0.125 in bleed, no marks) · `…_print-crop-marks_CMYK.pdf` (with crop marks). 2 pages each: front, back. Vector, fonts embedded, DeviceCMYK (Ghostscript default profile), TrimBox/BleedBox set. RGB masters in `rgb/`. |
-| **Previews** | `zisel-business-card-{A,B,C}_preview.png` (front + back at trim) · comparison `zisel-business-card-concepts.png` (copy: `/workspace/zisel/business-card-concepts.png`) |
-| **Editable** | `src/concepts.py` (text/colors/layout) · `src/card.css` · generated `src/concept-*.html` · fonts in `src/fonts/` |
-| **Re-render** | `cd deliverables/business-cards/src && python3 build.py` (Chrome → PDF, pypdf boxes, Ghostscript CMYK, pdftoppm previews). README PDF: `python3 md2pdf.py ../README.md` |
-| **Print notes** | Gold is flat ink (#c99a3a on navy, #a7802d on white); for metallic ask the printer for gold foil. Get a soft proof for the heavy navy. |
+| **Print PDFs** | `zisel-business-card-{A,B,C}_print-bleed_CMYK.pdf` (3.75×2.25 in, 0.125 in bleed, no marks) · `…_print-crop-marks_CMYK.pdf` (crop marks). 2 pages each: front, back. 100% vector, text outlined (no fonts), gold as native DeviceCMYK gradients, TrimBox/BleedBox set. RGB versions in `rgb/`. |
+| **Previews** | `zisel-business-card-{A,B,C}_preview.png` (front + back at trim, 600 dpi from the CMYK PDF) · comparison `zisel-business-card-concepts.png` (copy: `/workspace/zisel/business-card-concepts.png`) |
+| **Editable** | `src/concepts.py` (text, inks, gradient stops, band size, per-concept options) · `src/build.py` (renderer) · fonts in `src/fonts/` |
+| **Re-render** | `cd deliverables/business-cards/src && python3 build.py` (reportlab + HarfBuzz outlines + shapely; previews via Ghostscript). README PDF: `python3 md2pdf.py ../README.md` |
+| **Print notes** | Navy hand-set to C100 M70 Y5 K80; other inks via Ghostscript SWOP profile, so get a proof. Gold areas can go to **gold foil** if the printer offers it. |
 
 ### Invite card (square cover)
 | | |
