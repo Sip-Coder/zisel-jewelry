@@ -1,0 +1,6 @@
+# Vistaprint's own template/guideline files and the configurator screenshot (it shows a delivery ZIP code) stay local, not in the public repo
+*.zip
+t_pdf/
+t_ai/
+Artwork Guidelines.pdf
+navy_gold_configured.png
